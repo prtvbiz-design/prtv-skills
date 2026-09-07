@@ -1,0 +1,40 @@
+# PRTV — digital signage editor (prtv.pro)
+
+> PRTV is a cloud editor for digital signage: menu boards, promo screens and info channels shown on Smart TVs, set-top boxes and browsers. Slideshows are built from slides and elements in a fixed 1920×1080 space; live widgets (clocks, weather, rates, QR, countdowns, calendars, feeds) are added from public builders on s.prtv.su. Aimed at cafés, restaurants, salons and small businesses in Russia/CIS, with English materials for international users.
+
+## Skills for AI agents (Agent Skills format, CC-BY-4.0)
+
+Open instructions that let an AI agent work in the prtv.pro editor through its interface. Load prtv-editor-overview first.
+
+- [prtv-editor-overview (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-editor-overview/SKILL.md): map of the editor — objects, coordinate space, panels, DOM conventions, fonts, TV slots
+- [prtv-editor-overview (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-editor-overview/SKILL.ru.md): карта редактора
+- [prtv-slide-settings (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-slide-settings/SKILL.md): slide strip, duration, transitions, background, defaults, templates
+- [prtv-slide-settings (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-slide-settings/SKILL.ru.md): уровень слайда
+- [prtv-element-layout (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-element-layout/SKILL.md): position, depth, right-click menu, 57 entrance presets, kiosk links, layout rules for TV
+- [prtv-element-layout (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-element-layout/SKILL.ru.md): раскладка элементов
+- [prtv-text-element (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-text-element/SKILL.md): native text, toolbar, what persists, menu-row traps
+- [prtv-text-element (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-text-element/SKILL.ru.md): элемент «Текст»
+- [prtv-html-block-animation (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-html-block-animation/SKILL.md): HTML block, CSS/SVG animation without JavaScript, recipes
+- [prtv-html-block-animation (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-html-block-animation/SKILL.ru.md): HTML-блок и анимация
+- [prtv-video (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-video/SKILL.md): video element, background video, seamless loops, sound on TVs
+- [prtv-video (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-video/SKILL.ru.md): видео
+- [prtv-widgets (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-widgets/SKILL.md): widgets — universal URL rules, transparency, sizing, acceptance
+- [prtv-widgets (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-widgets/SKILL.ru.md): информеры — общие правила
+- [prtv-widgets-catalog (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-widgets-catalog/SKILL.md): per-widget parameter reference
+- [prtv-widgets-catalog (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-widgets-catalog/SKILL.ru.md): каталог информеров
+- [prtv-agent-rules (EN)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-agent-rules/SKILL.md): discipline for a browser agent in the editor
+- [prtv-agent-rules (RU)](https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/prtv-agent-rules/SKILL.ru.md): правила браузерного агента
+- [Skill set index](https://github.com/prtvbiz-design/prtv-skills): what each skill covers and when to load it
+
+## Product
+
+- [Editor](https://prtv.pro): account, slideshow list, editor at /slideshow/<id>, public player at /<TV-number>
+- [Widget builders](https://s.prtv.su/informery): 30 public builders — clocks, weather, calendars, QR, countdown, rates, promo cards, maps and more
+
+## Articles
+
+- [Menu boards for coffee shops with AI-generated graphics (RU)](https://s.prtv.su/): (URL to be added at publication)
+
+## Optional
+
+- [Feed](https://s.prtv.su/feed): RSS of s.prtv.su
