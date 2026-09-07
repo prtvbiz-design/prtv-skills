@@ -1,5 +1,9 @@
 # PRTV Constructor Skills for AI agents
 
+**PRTV** (https://prtv.pro) is a cloud digital signage editor: menu boards, promo screens and info channels for Smart TVs, set-top boxes and browsers, with live widgets (clocks, weather, rates, QR, countdowns, calendars, social feeds) built on https://s.prtv.su. This repository holds open **Agent Skills** for the PRTV editor: what an AI agent needs to know to build and edit slides in prtv.pro the way a person does, in English and Russian.
+
+**По-русски.** PRTV (prtv.pro) — конструктор цифровых вывесок: меню-борды, промо-экраны и информационные каналы для Smart TV, приставок и браузеров; информеры (часы, погода, курсы, QR, обратный отсчёт, календари, соцленты) собираются на s.prtv.su. В этом репозитории — открытые скиллы для ИИ-агентов (Claude, Codex, Gemini CLI, Cursor и других): как собирать и править слайды в конструкторе prtv.pro через интерфейс, без внутреннего API. Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Начинать с `prtv-editor-overview`. Лицензия CC-BY-4.0.
+
 Open, reusable skills that teach an AI agent (Claude, Codex, Gemini CLI, Cursor or any tool that reads the Agent Skills format) how to work in the **PRTV** digital-signage editor — https://prtv.pro — the way a person does: through the interface, reading the page state when needed, never through private APIs.
 
 Each skill is a folder with `SKILL.md` (English) and `SKILL.ru.md` (Russian). The Russian file is not a byte-for-byte translation but the same material written naturally.
