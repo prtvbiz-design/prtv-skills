@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prtvbiz-design.github.io/prtv-skills/sitemap.xml

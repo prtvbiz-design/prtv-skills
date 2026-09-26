@@ -1,66 +1,91 @@
-# PRTV Constructor Skills for AI agents
+# Digital signage & PRTV — Agent Skills
 
-**PRTV** (https://prtv.pro) is a cloud digital signage editor: menu boards, promo screens and info channels for Smart TVs, set-top boxes and browsers, with live widgets (clocks, weather, rates, QR, countdowns, calendars, social feeds) built on https://s.prtv.su. This repository holds open **Agent Skills** for the PRTV editor: what an AI agent needs to know to build and edit slides in prtv.pro the way a person does, in English and Russian.
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-16-blue)](https://agentskills.io)
+[![skills.sh](https://img.shields.io/badge/npx%20skills%20add-prtvbiz--design%2Fprtv--skills-black)](https://skills.sh/prtvbiz-design/prtv-skills)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+[![Languages](https://img.shields.io/badge/lang-EN%20%7C%20RU-green)](#)
 
-**По-русски.** PRTV (prtv.pro) — конструктор цифровых вывесок: меню-борды, промо-экраны и информационные каналы для Smart TV, приставок и браузеров; информеры (часы, погода, курсы, QR, обратный отсчёт, календари, соцленты) собираются на s.prtv.su. В этом репозитории — открытые скиллы для ИИ-агентов (Claude, Codex, Gemini CLI, Cursor и других): как собирать и править слайды в конструкторе prtv.pro через интерфейс, без внутреннего API. Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Начинать с `prtv-editor-overview`. Лицензия CC-BY-4.0.
+Open skills that teach AI agents (Claude Code, Claude.ai, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and any tool that reads the Agent Skills format) how to make **digital signage** for small businesses: **menu boards for cafés and restaurants**, TV slideshows and promo loops, screen layout for Smart TVs, live widgets (clock, weather, QR, countdown), seamless loop video, and putting it all on a real TV — plus a detailed set for the **PRTV** editor (https://prtv.pro).
 
-Open, reusable skills that teach an AI agent (Claude, Codex, Gemini CLI, Cursor or any tool that reads the Agent Skills format) how to work in the **PRTV** digital-signage editor — https://prtv.pro — the way a person does: through the interface, reading the page state when needed, never through private APIs.
+**По-русски.** Открытые скиллы для ИИ-агентов про цифровые вывески: **меню-борды для кофеен и ресторанов**, слайд-шоу и промо-циклы для телевизоров, вёрстка под Smart TV, информеры (часы, погода, QR, таймер), бесшовные видеофоны, вывод на настоящий ТВ — и подробный набор про конструктор **PRTV** (prtv.pro). Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Лицензия CC-BY-4.0.
 
-Each skill is a folder with `SKILL.md` (English) and `SKILL.ru.md` (Russian). The Russian file is not a byte-for-byte translation but the same material written naturally.
+## Install
 
-**How to use**
+**Any agent — skills CLI** (Claude Code, Cursor, Codex, Gemini CLI, Copilot, Windsurf, OpenCode…):
 
-- Claude Code / Codex / Gemini CLI / Cursor: copy the folders you need into your project's `skills/` (or `.claude/skills/`) directory — the YAML header tells the agent when to load each one. Start with `prtv-editor-overview`.
-- Any chat assistant: paste the raw `SKILL.md` (or `SKILL.ru.md`) into the conversation, or give the agent the raw file URL.
-- Clone everything: `git clone https://github.com/prtvbiz-design/prtv-skills.git`
-
-License: CC-BY-4.0. Product: PRTV (prtv.pro), cloud editor for menu boards, promo screens and info channels on Smart TVs, set-top boxes and browsers. Everything in these files was verified in the browser on real builds; where something was not verified, the text says so.
-
-## The set
-
-Load **prtv-editor-overview** first; the others assume it.
-
-| Skill | What it covers | Load when |
-|---|---|---|
-| **prtv-editor-overview** | Slideshow → slide → element, the 1920×1080 space, URLs, panels, DOM conventions, fonts, uploads, TV slots, watermark | any task in the editor |
-| **prtv-slide-settings** | Slide strip and its hover buttons, reordering, duration, 15 transitions, progress bar, background (colour / image / video), element defaults, templates, «Apply to all» | adding, configuring or checking a slide |
-| **prtv-element-layout** | Position and size by dragging, rotation, depth, keep-aspect, permanent elements, the 7-item right-click menu, 57 entrance presets, clickable links for kiosks, layout rules (safe zone, type sizes, contrast, motion) | moving, layering, animating, linking an element; checking composition |
-| **prtv-text-element** | Native text through TinyMCE: entering edit mode, toolbar, what persists and what is lost, the triple-click trap on menu rows, Ctrl+A replacement, quirks | writing or restyling text; text edits disappearing |
-| **prtv-html-block-animation** | HTML block, CSS keyframes, SVG filters and SMIL without JavaScript, layers, ticker, recipes (banner behind a plane, TV static, wind, drift) | steam, shine, wind, looping effects; animating native text |
-| **prtv-video** | Video element (YouTube, VK, Kinescope, Vimeo, own files), background video, embeds through HTML, sound on TVs, seamless-loop requirements | putting video on a slide or as a background |
-| **prtv-widgets** | Widgets (informers): two ways to add, the three universal URL rules, parameter naming, two-level transparency, sizing fluid widgets, dependency risks, acceptance | any clock, weather, calendar, QR, countdown, finance, promo, map or social widget |
-| **prtv-widgets-catalog** | Per-widget reference: builders, files, views, parameters, limitations, embeds — clocks, weather, countdown, QR, calendars, rates, promo card, moon, holidays, work-day, maps, TV programme, radio, timetable, poll, cloud feed, Yandex widgets, social feeds, RSS | building or reading a specific widget URL |
-| **prtv-agent-rules** | Zero screenshots, computed coordinates, edits only through the interface, verification by reload and preview, JavaScript-tool traps, hover-only controls, slide activation, element timing, session pacing | the start of any automated session |
-
-## Format
-
-Every `SKILL.md` starts with a YAML header in the Agent Skills format:
-
-```yaml
----
-name: prtv-<name>
-description: what it covers and when to load it
-license: CC-BY-4.0
-metadata:
-  product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "YYYY-MM-DD"
-  language: en | ru
-  scope: editor UI + reading page state from DOM; no private API calls
----
+```bash
+npx skills add prtvbiz-design/prtv-skills                              # choose interactively
+npx skills add prtvbiz-design/prtv-skills --skill digital-menu-board   # one skill
+npx skills add prtvbiz-design/prtv-skills --skill '*'                 # everything
+npx skills add https://prtvbiz-design.github.io/prtv-skills            # via the discovery index
 ```
 
-The body is a short introduction, numbered sections, a "What not to do" list and a "Related" line naming the neighbouring skills.
+**Claude Code — plugin marketplace:**
 
-## Scope
+```
+/plugin marketplace add prtvbiz-design/prtv-skills
+/plugin install digital-signage@prtv-skills     # vendor-neutral signage skills
+/plugin install prtv-editor@prtv-skills         # PRTV editor skills
+```
 
-In: everything visible and doable through the editor interface; reading the page state (element ids, geometry, depth, active slide) with JavaScript; the public widget builders on s.prtv.su and their parameters; emulating input into interface fields.
+**Claude.ai / Claude desktop:** download a skill folder as a ZIP and upload it in the Skills section of Claude settings.
 
-Out: the editor's private server methods, internal data-field names not visible in the interface, identifiers of any real project, and how to generate images or video with AI. A skill about producing menu-board graphics with AI is a separate publication.
+**Manually:** copy the folders into `.claude/skills/`, `.cursor/skills/`, `.agents/skills/` or your agent's skills directory. Any chat assistant: paste the raw `SKILL.md` or give it the raw URL.
+
+## Try it — prompts that trigger the skills
+
+- "Make a menu board for my coffee shop: 14 drinks, 6 pastries, one 50-inch TV over the counter."
+- "What should we show on the TV in our beauty salon's waiting area?"
+- "Add a clock, weather and a Wi-Fi QR code to our lobby screen."
+- "This looping video jumps every 10 seconds — fix the seam."
+- "How do I get a slideshow onto a Samsung TV so it starts by itself every morning?"
+- "Собери меню-борд для кофейни в PRTV."
+- «Сделай вертикальное слайд-шоу для магазина одежды с таймером распродажи.»
+
+## The skills
+
+### Digital signage — vendor-neutral
+
+| Skill | What it does |
+|---|---|
+| **[digital-menu-board](digital-menu-board/SKILL.md)** | Menu boards for cafés, restaurants, bars: how many items fit, price rows, type sizes by distance, hero items, day-part menus, checklist |
+| **[digital-signage-content](digital-signage-content/SKILL.md)** | What to show and in what loop: goals per screen, slide durations, promo formula, scheduling, cheat sheet for cafés, retail, salons, clinics, hotels, fitness |
+| **[signage-screen-design](signage-screen-design/SKILL.md)** | Safe zone, type by viewing distance, contrast, portrait and stretched displays, real TV browser engines and CSS widths (960/1280), what HTML/CSS survives |
+| **[signage-widgets](signage-widgets/SKILL.md)** | Clock, weather, QR, countdown, rates, promo card as iframes — picking, sizing, transparency, reliability, ready builders |
+| **[signage-loop-video](signage-loop-video/SKILL.md)** | Seamless loop backgrounds: what loops, measuring the seam with ffmpeg, crossfade, encoding for Smart TVs |
+| **[tv-signage-setup](tv-signage-setup/SKILL.md)** | Display and player choice, kiosk mode, autostart after power loss, screensaver and eco traps, network, schedule, site checklist |
+
+### PRTV editor (prtv.pro)
+
+Start with **prtv-digital-signage** (router) or **prtv-editor-overview** (map of the editor).
+
+| Skill | What it covers |
+|---|---|
+| **[prtv-digital-signage](prtv-digital-signage/SKILL.md)** | Entry point: what PRTV is, when to use it, the end-to-end workflow and which skill to load at each step |
+| **[prtv-editor-overview](prtv-editor-overview/SKILL.md)** | Slideshow → slide → element, the 1920×1080 space, URLs, panels, DOM conventions, fonts, uploads, licences, watermark |
+| **[prtv-agent-rules](prtv-agent-rules/SKILL.md)** | Discipline for an AI browser agent: DOM over screenshots, computed coordinates, verification by reload, JS-tool traps |
+| **[prtv-slide-settings](prtv-slide-settings/SKILL.md)** | Slide strip, duration, 15 transitions, progress bar, backgrounds, defaults, templates |
+| **[prtv-element-layout](prtv-element-layout/SKILL.md)** | Position, depth, right-click menu, 57 entrance presets, kiosk links, TV layout rules |
+| **[prtv-text-element](prtv-text-element/SKILL.md)** | Native text via TinyMCE: what persists, menu-row traps, bulk edits |
+| **[prtv-html-block-animation](prtv-html-block-animation/SKILL.md)** | HTML block, CSS keyframes, SVG filters, SMIL without JavaScript; recipes |
+| **[prtv-video](prtv-video/SKILL.md)** | Video element, background video, embeds, sound on TVs, seamless loops |
+| **[prtv-widgets](prtv-widgets/SKILL.md)** | Widgets (informers): URL rules, transparency, sizing, network risks, acceptance |
+| **[prtv-widgets-catalog](prtv-widgets-catalog/SKILL.md)** | Per-widget parameters and ready embeds for ~30 widget builders on s.prtv.su |
+
+## About PRTV
+
+PRTV (https://prtv.pro) is a cloud digital-signage editor for cafés, restaurants, shops, salons, clinics and hotels: slideshows with native text, images, video, CSS-animated HTML blocks and live widgets, played on any Smart TV, Android box or browser by a public address. The first licence — one slideshow on up to three screens at once — is free and not time-limited. Widget builders: https://s.prtv.su/informery.
+
+## Format and scope
+
+Every `SKILL.md` follows the [Agent Skills specification](https://agentskills.io/specification): YAML front matter with `name`, `description` (what it does + when to use it + RU/EN trigger words), `license`, `metadata`; then the body. The vendor-neutral skills contain no product lock-in — PRTV appears only in a final "doing it in PRTV" section. The prtv-* skills cover the editor interface and reading page state from the DOM; no private APIs.
+
+Discovery index (Agent Skills Discovery RFC v0.2.0): https://prtvbiz-design.github.io/prtv-skills/.well-known/agent-skills/index.json — rebuilt by `scripts/build_index.py`.
 
 ## Links
 
-- Editor: https://prtv.pro
-- Widget builders: https://s.prtv.su/informery
-- This set on GitHub: https://github.com/prtvbiz-design/prtv-skills
+- Site of the set: https://prtvbiz-design.github.io/prtv-skills/
+- Editor: https://prtv.pro · Widgets: https://s.prtv.su/informery · Articles and cases: https://s.prtv.su
 - Raw files: `https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/<skill>/SKILL.md`
+
+Contributions and issues welcome. License: [CC-BY-4.0](LICENSE).
