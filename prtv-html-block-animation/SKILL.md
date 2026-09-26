@@ -1,11 +1,12 @@
 ---
 name: prtv-html-block-animation
-description: How to add live motion to a PRTV digital-signage slide with the HTML block — CSS keyframes, SVG filters and SMIL, no JavaScript. Use when an AI agent or a user needs steam, shimmer, wind, TV noise, a towed banner or any looping effect on a slide in the prtv.pro editor, or needs to animate native editor text without converting it to HTML.
+description: Live motion on a PRTV (prtv.pro) digital-signage slide with the HTML block — CSS keyframes, SVG filters and SMIL, no JavaScript, safe for old Smart TV browsers; recipes for steam over a cup, shimmer, wind, TV noise, a banner towed by a plane, tickers, and animating native text. Use when a menu board or promo slide needs a looping animated detail, a CSS or SVG effect, or custom HTML inside prtv.pro. Triggers (RU) анимация на слайде, пар над кофе, CSS-анимация, HTML-блок, бегущая строка, живой меню-борд.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---

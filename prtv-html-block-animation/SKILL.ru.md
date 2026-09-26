@@ -1,11 +1,12 @@
 ---
 name: prtv-html-block-animation
-description: Как оживить слайд цифровой вывески PRTV через HTML-блок — CSS keyframes, SVG-фильтры и SMIL, без JavaScript. Применять, когда ИИ-агенту или пользователю нужен пар, блик, ветер, ТВ-рябь, транспарант за самолётом или любой зацикленный эффект на слайде в конструкторе prtv.pro, а также когда нужно анимировать родной текст редактора, не превращая его в HTML.
+description: Живое движение на слайде вывески PRTV (prtv.pro) через HTML-блок — CSS keyframes, SVG-фильтры и SMIL без JavaScript, безопасно для старых браузеров Smart TV; рецепты пара над чашкой, блика, ветра, ТВ-шума, баннера за самолётом, бегущей строки, анимации нативного текста. Использовать, когда меню-борду или промо-слайду нужна зацикленная анимированная деталь, CSS- или SVG-эффект или свой HTML внутри prtv.pro. Triggers (EN) slide animation, steam over coffee, CSS animation, HTML block, ticker, animated menu board.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: Конструктор цифровых вывесок PRTV (prtv.pro)
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: ru
   scope: интерфейс редактора + чтение состояния страницы из DOM; без вызовов внутреннего API
 ---
