@@ -1,11 +1,12 @@
 ---
 name: prtv-video
-description: Video in the PRTV (prtv.pro) digital-signage editor — the native Video element (YouTube incl. playlists, VK Video, Kinescope, Vimeo, own files via PRTV video hosting), background video of a slide with elements on top, embedding other players through an HTML block, sound and autoplay on TVs, and what a video file must be to loop seamlessly as a menu-board background (first frame = last frame, no audio, 16:9, period vs slide duration). Use when an AI agent or a person needs to put a video on a slide, make a video background, choose a hosting, or check why a video does not play or loop cleanly on a screen.
+description: Video in the PRTV (prtv.pro) digital-signage editor — the Video element (YouTube incl. playlists, VK Video, Kinescope, Vimeo, own files via PRTV video hosting), background video with elements on top, embedding other players through an HTML block, sound and autoplay on TVs, and what a file must be to loop seamlessly as a menu-board background. Use when putting a video or video background on a slide in prtv.pro, choosing a hosting, or finding out why a video does not play or loop cleanly on a TV screen. Triggers (RU) видео на слайде, видеофон, YouTube на экране, видео не играет на телевизоре, зацикленное видео PRTV.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
