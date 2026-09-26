@@ -1,11 +1,12 @@
 ---
 name: prtv-element-layout
-description: How to place and control any element on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layering), keep-aspect-ratio, permanent elements repeated on every slide, the seven-item right-click menu, the entrance-animation dialog with its 57 presets, clickable links for touch kiosks, and layout rules for a 1920×1080 TV screen (safe zones, type sizes, contrast, motion). Use when an AI agent or a person needs to move, resize, layer, animate or link an element, or check the composition of a slide, in the prtv.pro editor.
+description: Placing and controlling elements on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layers), keep aspect ratio, permanent elements on every slide, the right-click menu, entrance animations (57 presets), clickable links for touch kiosks, and layout rules for a TV screen (safe zone, type sizes by distance, contrast, 60/30/10 palette, motion). Use when moving, resizing, layering, animating or linking an element, or checking the composition of a menu board or promo slide in prtv.pro. Triggers (RU) расположить элемент, слои, анимация появления, кликабельный элемент, безопасная зона, вёрстка слайда PRTV.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
