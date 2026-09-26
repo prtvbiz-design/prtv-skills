@@ -1,11 +1,12 @@
 ---
 name: prtv-text-element
-description: Working with the native Text element of the PRTV (prtv.pro) digital-signage editor — entering and leaving text editing, the TinyMCE toolbar (fonts, size, colour, spacing), what kinds of edits are saved and what is silently lost, the triple-click trap on menu rows with right-aligned prices, replacing text with Ctrl+A, menu-row layout, known display quirks, and when to prefer a Text element over an HTML block. Use when an AI agent or a person needs to write, restyle or bulk-edit text on a slide in the prtv.pro editor, or when text edits keep disappearing after a reload.
+description: The native Text element of the PRTV (prtv.pro) digital-signage editor — entering and leaving edit mode, the TinyMCE toolbar (fonts, size, colour, spacing), which edits are saved and which are silently lost, the triple-click trap on menu rows with right-aligned prices, replacing text with Ctrl+A, menu-row layout, display quirks, and when to prefer Text over an HTML block. Use when writing, restyling or bulk-editing text, prices or menu items on a slide in prtv.pro, or when text edits disappear after reload. Triggers (RU) текст на слайде, шрифт, цены в меню, строки меню, текст не сохраняется, TinyMCE PRTV.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
