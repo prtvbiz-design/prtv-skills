@@ -1,11 +1,12 @@
 ---
 name: prtv-editor-overview
-description: Map of the PRTV (prtv.pro) digital-signage editor for AI agents — how a slideshow, its slides and elements are organised, the 1920×1080 coordinate space, URLs, the left/top panels, slide thumbnails, the element panel, built-in fonts, uploads, TV slots and the watermark, and how to read the editor state from the DOM. Load first for any task in the prtv.pro editor; other prtv-* skills assume it.
+description: Map of the PRTV (prtv.pro) cloud digital-signage editor, where menu boards, promo screens and TV slideshows are built — how a slideshow, its slides and elements are organised, the 1920×1080 coordinate space and custom canvases, URLs, panels, slide strip, element panel, fonts, uploads, licences (TV slots) and the watermark, and how to read the editor state from the DOM. Use first for any task in the prtv.pro editor — building or editing a menu board, slideshow or info screen there, by hand or with an AI browser agent; other prtv-* skills assume it. Triggers (RU) конструктор PRTV, редактор prtv.pro, слайд-шоу для ТВ, меню-борд в PRTV.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
