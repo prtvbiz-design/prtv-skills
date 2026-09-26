@@ -1,11 +1,12 @@
 ---
 name: prtv-widgets
-description: Widgets ("informers") in the PRTV (prtv.pro) digital-signage editor — the two ways to add one (native widget buttons vs. the public builders on s.prtv.su embedded through an HTML block), the universal rules that make a widget URL work (colours with %23, city names in Cyrillic, text through encodeURIComponent, identify the type by the php file name), why parameter names differ between widgets, two-level transparency, sizing fluid widgets so nothing is clipped, offline and dependency risks on TVs, thumbnails that show nothing, and how to accept a widget on the public page. Use before adding, restyling or debugging any clock, weather, calendar, QR, countdown, finance, promo, map or social widget in the prtv.pro editor; the per-widget parameter reference is in prtv-widgets-catalog.
+description: Widgets (informers) in the PRTV (prtv.pro) digital-signage editor — clock, weather, calendar, QR code, countdown, currency rates, promo card, maps, social feeds and RSS on a TV slide; native widget buttons vs the public builders on s.prtv.su embedded through an HTML block, URL rules (colours as %23, Cyrillic city names, encodeURIComponent), parameter naming, two-level transparency, sizing fluid widgets, offline and network risks on TVs, acceptance. Use before adding, restyling or debugging any widget on a menu board or info screen in prtv.pro; per-widget parameters are in prtv-widgets-catalog. Triggers (RU) информер, часы на экране, погода на ТВ, QR-код на слайде, таймер, курсы валют.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
