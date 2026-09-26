@@ -1,11 +1,12 @@
 ---
 name: prtv-agent-rules
-description: Discipline for an AI browser agent working in the PRTV (prtv.pro) digital-signage editor — zero screenshots (the 2000-px image limit and why runs die), reading the DOM instead, computing click coordinates instead of eyeballing them, what does and does not persist (edits through the interface only), verifying by reload and by preview, sanitising output that contains URLs, isolated-world and cross-tab traps of JavaScript tools, hover-only controls, slide activation, element-creation timing, duplicated permanent elements, hand-built widget URLs, and how to pace a long session. Use at the start of any automated session in the prtv.pro editor, before the first click.
+description: Discipline for an AI browser agent (Claude in Chrome, computer use, Playwright, Codex, Cursor) building menu boards or slideshows in the PRTV (prtv.pro) digital-signage editor — no screenshot loops (the 2000-px image limit), reading the DOM instead, computing click coordinates, what persists (edits only through the interface), verifying by reload and preview, sanitising output with URLs, isolated-world and cross-tab traps of JavaScript tools, hover-only controls, slide activation, element-creation timing, duplicated permanent elements, hand-built widget URLs, pacing a long session. Use at the start of any automated session in prtv.pro, before the first click. Triggers (RU) браузерный агент, автоматизация PRTV, ИИ собирает слайд-шоу.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
