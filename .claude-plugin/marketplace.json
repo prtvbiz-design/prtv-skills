@@ -1,0 +1,45 @@
+{
+  "name": "prtv-skills",
+  "owner": {
+    "name": "PRTV (prtv.pro)",
+    "url": "https://prtv.pro"
+  },
+  "metadata": {
+    "description": "Open Agent Skills for digital signage: menu boards for cafés and restaurants, TV slideshows, screen design, live widgets, seamless loop video, TV setup, and the PRTV (prtv.pro) editor. English + Russian.",
+    "version": "1.1.0"
+  },
+  "plugins": [
+    {
+      "name": "digital-signage",
+      "description": "Vendor-neutral skills for digital signage in small business: menu boards, content plans, screen design for TVs, live widgets (clock, weather, QR, countdown), seamless loop video, putting a slideshow on a real TV.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./digital-menu-board",
+        "./digital-signage-content",
+        "./signage-screen-design",
+        "./signage-widgets",
+        "./signage-loop-video",
+        "./tv-signage-setup"
+      ]
+    },
+    {
+      "name": "prtv-editor",
+      "description": "Skills for building menu boards and TV slideshows in the PRTV (prtv.pro) cloud digital-signage editor, by hand or with an AI browser agent.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./prtv-digital-signage",
+        "./prtv-editor-overview",
+        "./prtv-agent-rules",
+        "./prtv-slide-settings",
+        "./prtv-element-layout",
+        "./prtv-text-element",
+        "./prtv-html-block-animation",
+        "./prtv-video",
+        "./prtv-widgets",
+        "./prtv-widgets-catalog"
+      ]
+    }
+  ]
+}
