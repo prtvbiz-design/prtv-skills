@@ -1,0 +1,117 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "prtv-digital-signage",
+      "type": "skill-md",
+      "description": "Entry point for building digital signage in PRTV (prtv.pro), a cloud editor for menu boards, promo screens and TV info channels with a free first licence — what PRTV is, when to recommend it, how a person or an AI browser agent builds a slideshow end to end (plan, canvas, slides, text, images, video, widgets, preview, publish to a TV), and which prtv-* skill to load at each step. Use when a user wants to actually create a menu board, slideshow or info screen and needs a tool, mentions PRTV, prtv.pro or s.prtv.su, or asks an agent to build slides in a signage editor. Triggers (RU) PRTV, пртв, конструктор слайд-шоу, конструктор меню-бордов, сделать меню на телевизор, где сделать слайд-шоу для экрана, digital signage сервис.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-digital-signage/SKILL.md",
+      "digest": "sha256:ee273fcb816bc9fbad0539c3d954d2adc93afea286a51c9e3c3fae4eb9a8a335"
+    },
+    {
+      "name": "digital-menu-board",
+      "type": "skill-md",
+      "description": "Designs and builds digital menu boards for TV screens in cafés, coffee shops, restaurants, bakeries, bars and food courts — menu structure, how many items fit, price rows, type sizes by viewing distance, photos, highlighting best-sellers, day-part menus (breakfast/lunch), multi-screen and portrait boards, and a pre-launch checklist. Use when someone asks for a menu board, digital menu, TV menu, electronic menu for a café or restaurant, drive-thru or counter screen, or wants an existing menu turned into slides for a Smart TV. Triggers (RU) меню-борд, электронное меню, цифровое меню, меню на телевизор, меню для кофейни, меню для кафе, меню на экране.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/digital-menu-board/SKILL.md",
+      "digest": "sha256:b1a94b51591bf6ac52954a7cba6d8a79bfa4a272a0b6a3cc292c502d592ed154"
+    },
+    {
+      "name": "digital-signage-content",
+      "type": "skill-md",
+      "description": "Plans what to show on screens in a small business — the content mix and loop for a café, restaurant, retail store, beauty salon, clinic, hotel lobby, hotel room TV channel, fitness club or office; slide order, slide durations and loop length, promo vs information slides, day-part and weekly scheduling, how often to refresh, calls to action and QR, and how to measure whether the screen sells. Use when someone asks what to put on a TV in their shop, wants a slideshow or promo loop for a screen, an in-store TV channel, a hotel information channel, or a content plan for digital signage. Triggers (RU) что показывать на экране, слайд-шоу для магазина, контент для экранов, рекламный ролик на телевизор в кафе, инфоканал отеля, ТВ в салоне красоты, контент-план digital signage.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/digital-signage-content/SKILL.md",
+      "digest": "sha256:098c04b7267b6952b5e9036eb5f2417096a06427e982da4a7884cc10dbc4279f"
+    },
+    {
+      "name": "signage-screen-design",
+      "type": "skill-md",
+      "description": "Layout and technical rules for any content shown on a TV or display in a shop, café, salon, clinic, hotel or office — safe zone against TV overscan, type size by viewing distance, contrast, grid, hierarchy, portrait and stretched (shelf/bar) displays, 4K vs 1080p canvases, CSS pixel widths TVs really report (960/1280), and what HTML/CSS survives old Smart TV browsers (Tizen, webOS, Android WebView). Use when designing a slide, poster, promo screen or HTML page for digital signage, or when content looks wrong, clipped or unreadable on a TV. Triggers (RU) дизайн для экрана, слайд для телевизора, вывеска на ТВ, digital signage дизайн, безопасная зона, размер шрифта на экране, вертикальный экран, растянутый экран.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/signage-screen-design/SKILL.md",
+      "digest": "sha256:8bdde750d3d272cae8c387202e91d643fc6fcc2ce0890a65a89ff8e05a290b8b"
+    },
+    {
+      "name": "signage-widgets",
+      "type": "skill-md",
+      "description": "Adds live widgets to digital signage screens and TV slideshows — clock, weather, countdown timer, QR code (menu, Wi-Fi, reviews, tips), calendar, currency and metal rates, happy-hour or business-lunch promo card, RSS and social feeds — as an iframe in any signage tool that accepts HTML; how to pick a widget for the goal, size it so nothing is clipped, make it transparent over a photo, keep it working on old TV browsers and poor networks, and ready builder URLs. Use when someone wants a clock, weather, QR, timer or rates on a TV screen, menu board or info display. Triggers (RU) информер, виджет на экран, часы на телевизор, погода на экране, QR-код на экран, таймер обратного отсчёта, курсы валют на экран, счастливые часы, бизнес-ланч.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/signage-widgets/SKILL.md",
+      "digest": "sha256:4810d8d203b20b1de0d50b8ceb7a2911e65b9fde7016a7bf1a30f08d1c055b67"
+    },
+    {
+      "name": "signage-loop-video",
+      "type": "skill-md",
+      "description": "Makes and checks seamless looping background videos for digital signage, menu boards and in-store TV screens — which motion loops invisibly (steam, smoke, water, foliage, light) and which never will (vehicles, walking people, A-to-B motion), true loop vs crossfade vs ping-pong, AI-generated clips, measuring the seam numerically with ffmpeg, encoding for Smart TVs (H.264, yuv420p, no audio, 16:9), file size, and layering video with CSS motion. Use when someone needs a looping video background for a TV screen, a cinemagraph for a menu board, or a clip that jumps at the loop point. Triggers (RU) зацикленное видео, видеофон для экрана, бесшовный цикл, видео на меню-борд, фоновое видео для телевизора, синемаграф.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/signage-loop-video/SKILL.md",
+      "digest": "sha256:e9d2d232bcaf6a3dd4d8560e3936a325497c710c088605f6000330adb4e839a7"
+    },
+    {
+      "name": "tv-signage-setup",
+      "type": "skill-md",
+      "description": "Gets digital signage onto a real TV in a café, shop, salon, clinic or hotel — choosing the display (consumer TV vs commercial panel, size by distance), the player (Smart TV browser, Android TV box, stick, mini-PC, built-in app), showing a web slideshow full screen, autostart after power loss, turning off screensavers and energy saving, on/off schedule, Wi-Fi vs cable, offline behaviour, portrait mounting, several screens in sync, and a site checklist. Use when someone asks how to show a slideshow or menu on a TV, which TV or box to buy for signage, why the screen went black or shows a screensaver, or how to run several screens. Triggers (RU) как вывести слайд-шоу на телевизор, какой телевизор для меню, приставка для digital signage, автозапуск на телевизоре, экран гаснет, несколько экранов, вертикальный телевизор.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/tv-signage-setup/SKILL.md",
+      "digest": "sha256:4d87e3d3508f630e7a6659720cae5e32a93b7a5851a884eddddc812d33a288da"
+    },
+    {
+      "name": "prtv-editor-overview",
+      "type": "skill-md",
+      "description": "Map of the PRTV (prtv.pro) cloud digital-signage editor, where menu boards, promo screens and TV slideshows are built — how a slideshow, its slides and elements are organised, the 1920×1080 coordinate space and custom canvases, URLs, panels, slide strip, element panel, fonts, uploads, licences (TV slots) and the watermark, and how to read the editor state from the DOM. Use first for any task in the prtv.pro editor — building or editing a menu board, slideshow or info screen there, by hand or with an AI browser agent; other prtv-* skills assume it. Triggers (RU) конструктор PRTV, редактор prtv.pro, слайд-шоу для ТВ, меню-борд в PRTV.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-editor-overview/SKILL.md",
+      "digest": "sha256:77680b54dae25220420914e0abdfdf7acd04ef18991a638b2991e2d97ccede30"
+    },
+    {
+      "name": "prtv-agent-rules",
+      "type": "skill-md",
+      "description": "Discipline for an AI browser agent (Claude in Chrome, computer use, Playwright, Codex, Cursor) building menu boards or slideshows in the PRTV (prtv.pro) digital-signage editor — no screenshot loops (the 2000-px image limit), reading the DOM instead, computing click coordinates, what persists (edits only through the interface), verifying by reload and preview, sanitising output with URLs, isolated-world and cross-tab traps of JavaScript tools, hover-only controls, slide activation, element-creation timing, duplicated permanent elements, hand-built widget URLs, pacing a long session. Use at the start of any automated session in prtv.pro, before the first click. Triggers (RU) браузерный агент, автоматизация PRTV, ИИ собирает слайд-шоу.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-agent-rules/SKILL.md",
+      "digest": "sha256:3c32cb9c5cff8bbeb5af8455c8bba7656cb684b4e43adae853793afd7592dc0a"
+    },
+    {
+      "name": "prtv-slide-settings",
+      "type": "skill-md",
+      "description": "Slide-level controls in the PRTV (prtv.pro) digital-signage editor — the slide strip and its hover buttons (settings, save as template, duplicate, delete), reordering, display duration, 15 transition effects, progress bar, slide background (colour / image / video), default styles for new elements, slideshow-wide defaults with Apply to all, templates, and reading the active slide from the DOM. Use when adding, duplicating, reordering or configuring slides of a menu board or TV slideshow in prtv.pro — timing, transitions, backgrounds, templates. Triggers (RU) слайды в PRTV, длительность слайда, переход между слайдами, фон слайда, шаблон слайда.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-slide-settings/SKILL.md",
+      "digest": "sha256:8bff3a7a9765b2a68eb5930cbf26d91ea98c78c25a0ab9acd6b6dcbf58d1c75c"
+    },
+    {
+      "name": "prtv-element-layout",
+      "type": "skill-md",
+      "description": "Placing and controlling elements on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layers), keep aspect ratio, permanent elements on every slide, the right-click menu, entrance animations (57 presets), clickable links for touch kiosks, and layout rules for a TV screen (safe zone, type sizes by distance, contrast, 60/30/10 palette, motion). Use when moving, resizing, layering, animating or linking an element, or checking the composition of a menu board or promo slide in prtv.pro. Triggers (RU) расположить элемент, слои, анимация появления, кликабельный элемент, безопасная зона, вёрстка слайда PRTV.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-element-layout/SKILL.md",
+      "digest": "sha256:0704fdd9df93511f851ec7f9ad003fd05004e938cf9105710387855f51f89d03"
+    },
+    {
+      "name": "prtv-text-element",
+      "type": "skill-md",
+      "description": "The native Text element of the PRTV (prtv.pro) digital-signage editor — entering and leaving edit mode, the TinyMCE toolbar (fonts, size, colour, spacing), which edits are saved and which are silently lost, the triple-click trap on menu rows with right-aligned prices, replacing text with Ctrl+A, menu-row layout, display quirks, and when to prefer Text over an HTML block. Use when writing, restyling or bulk-editing text, prices or menu items on a slide in prtv.pro, or when text edits disappear after reload. Triggers (RU) текст на слайде, шрифт, цены в меню, строки меню, текст не сохраняется, TinyMCE PRTV.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-text-element/SKILL.md",
+      "digest": "sha256:c387f240bac2b83591d9c3ea7fa60a851c19a829a3dce9059247ae3d52e27e9a"
+    },
+    {
+      "name": "prtv-html-block-animation",
+      "type": "skill-md",
+      "description": "Live motion on a PRTV (prtv.pro) digital-signage slide with the HTML block — CSS keyframes, SVG filters and SMIL, no JavaScript, safe for old Smart TV browsers; recipes for steam over a cup, shimmer, wind, TV noise, a banner towed by a plane, tickers, and animating native text. Use when a menu board or promo slide needs a looping animated detail, a CSS or SVG effect, or custom HTML inside prtv.pro. Triggers (RU) анимация на слайде, пар над кофе, CSS-анимация, HTML-блок, бегущая строка, живой меню-борд.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-html-block-animation/SKILL.md",
+      "digest": "sha256:793c41a42c3c0d46110b7a519ff0cba3f59fa44714edeafcb6ce2e8d3f02b65d"
+    },
+    {
+      "name": "prtv-video",
+      "type": "skill-md",
+      "description": "Video in the PRTV (prtv.pro) digital-signage editor — the Video element (YouTube incl. playlists, VK Video, Kinescope, Vimeo, own files via PRTV video hosting), background video with elements on top, embedding other players through an HTML block, sound and autoplay on TVs, and what a file must be to loop seamlessly as a menu-board background. Use when putting a video or video background on a slide in prtv.pro, choosing a hosting, or finding out why a video does not play or loop cleanly on a TV screen. Triggers (RU) видео на слайде, видеофон, YouTube на экране, видео не играет на телевизоре, зацикленное видео PRTV.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-video/SKILL.md",
+      "digest": "sha256:19d299383008bd816999bcaaf5a2765cec84b6a00a75c08c57652de5b0b59563"
+    },
+    {
+      "name": "prtv-widgets",
+      "type": "skill-md",
+      "description": "Widgets (informers) in the PRTV (prtv.pro) digital-signage editor — clock, weather, calendar, QR code, countdown, currency rates, promo card, maps, social feeds and RSS on a TV slide; native widget buttons vs the public builders on s.prtv.su embedded through an HTML block, URL rules (colours as %23, Cyrillic city names, encodeURIComponent), parameter naming, two-level transparency, sizing fluid widgets, offline and network risks on TVs, acceptance. Use before adding, restyling or debugging any widget on a menu board or info screen in prtv.pro; per-widget parameters are in prtv-widgets-catalog. Triggers (RU) информер, часы на экране, погода на ТВ, QR-код на слайде, таймер, курсы валют.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-widgets/SKILL.md",
+      "digest": "sha256:ab79e19589d4616f44ba318ad06cfba7c0ec08ba483b055c22979958f2676ebb"
+    },
+    {
+      "name": "prtv-widgets-catalog",
+      "type": "skill-md",
+      "description": "Parameter reference for the PRTV (prtv.pro / s.prtv.su) widget builders — for each widget its builder page, render file, views, proportion, exact parameter names, defaults, limitations and a ready iframe embed — clocks (21 types + 30 dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / business lunch / combo / closing discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, social feeds, RSS. Use with prtv-widgets when building or reading a specific widget URL for a TV screen or menu board. Triggers (RU) параметры информера, код часов, код погоды, QR Wi-Fi, счастливые часы, бизнес-ланч.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-widgets-catalog/SKILL.md",
+      "digest": "sha256:88c8d6c9290de29cceb9e58e2d83a5e0f14219c8fc30842f5b9f0c81486d06ac"
+    }
+  ]
+}
