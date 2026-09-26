@@ -1,11 +1,12 @@
 ---
 name: prtv-widgets-catalog
-description: Reference of the PRTV (prtv.pro / s.prtv.su) widget builders for AI agents — for each widget its public builder page, render file, views, proportion, parameters with their exact names, defaults, known limitations and a ready embed: clocks (21 configurable types + 30 fixed dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), plain calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / lunch / combo / last-hour discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, native social feeds and RSS. Use together with prtv-widgets when building or reading a specific widget URL.
+description: Parameter reference for the PRTV (prtv.pro / s.prtv.su) widget builders — for each widget its builder page, render file, views, proportion, exact parameter names, defaults, limitations and a ready iframe embed — clocks (21 types + 30 dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / business lunch / combo / closing discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, social feeds, RSS. Use with prtv-widgets when building or reading a specific widget URL for a TV screen or menu board. Triggers (RU) параметры информера, код часов, код погоды, QR Wi-Fi, счастливые часы, бизнес-ланч.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
