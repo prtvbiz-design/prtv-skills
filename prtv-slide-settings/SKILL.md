@@ -1,11 +1,12 @@
 ---
 name: prtv-slide-settings
-description: Slide-level controls in the PRTV (prtv.pro) digital-signage editor — the slide strip and its four hover buttons (settings, save as template, duplicate, delete), reordering slides, the slide settings panel (display duration, 15 transition effects, progress bar, background colour / image / video, default styles for new elements), slideshow-wide defaults with "Apply to all", saved templates, and how to read which slide is active from the DOM. Use when an AI agent or a person needs to add, duplicate, delete, reorder or configure a slide, set its background or timing, or check what a slide will do in rotation in the prtv.pro editor.
+description: Slide-level controls in the PRTV (prtv.pro) digital-signage editor — the slide strip and its hover buttons (settings, save as template, duplicate, delete), reordering, display duration, 15 transition effects, progress bar, slide background (colour / image / video), default styles for new elements, slideshow-wide defaults with Apply to all, templates, and reading the active slide from the DOM. Use when adding, duplicating, reordering or configuring slides of a menu board or TV slideshow in prtv.pro — timing, transitions, backgrounds, templates. Triggers (RU) слайды в PRTV, длительность слайда, переход между слайдами, фон слайда, шаблон слайда.
 license: CC-BY-4.0
 metadata:
+  author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-06"
+  version: "1.1"
+  date: "2026-09-26"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
