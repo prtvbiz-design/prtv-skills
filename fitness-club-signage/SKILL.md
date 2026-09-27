@@ -4,7 +4,7 @@ description: Plans screens for fitness clubs, gyms, yoga, dance and martial-arts
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-signage-content, signage-screen-design, prtv-feed-widget
@@ -63,6 +63,13 @@ Upgrade: feed the timetable from the club's calendar and prices from a sheet thr
 ## 6. Building it in PRTV
 
 Start from a template or prtv-digital-signage; one slideshow on up to three screens at once is free (reception + gym + studio door).
+
+## Tricks from PRTV practice
+
+- Machine safety tips and a calorie ranking — useful slides between selling ones.
+- The fitness bar menu and prices on the same screen near the exit.
+- Corporate packages for nearby offices — a separate slide with a QR.
+- Class timetable from Google Calendar or a table updates by itself (prtv-integrations).
 
 ## What not to do
 
