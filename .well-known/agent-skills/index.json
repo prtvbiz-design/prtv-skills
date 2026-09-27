@@ -111,7 +111,7 @@
       "type": "skill-md",
       "description": "Free PRTV (prtv.pro) system templates as a first test of the service — where the catalogue is (about 110 templates in Menu board, Business, Calendar, School, Residential building, Misc), how to preview a template by number on a TV without signing up, how to copy it to your account (the Copy button needs a slideshow group), rename it, replace prices, fix an expired countdown and restyle a widget, lighten a template for a weak TV, which templates are paid and the padlock trap; template numbers by industry. Use when someone wants to try PRTV quickly, take a ready menu-board or industry slideshow template, or an agent is asked to copy a template and edit it. Triggers (RU) шаблон PRTV, бесплатный шаблон меню борда, забрать шаблон, скопировать шаблон prtv.pro, поменять цены в шаблоне, шаблон слайд-шоу для телевизора.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-templates/SKILL.md",
-      "digest": "sha256:853dfaeaa0030392032d3b58cc127add2390258e922468d6db1fb4e2df098279"
+      "digest": "sha256:5f65e64a53797ab1f3e0381c87877fa44df9442059d595963e598fc602ebcc2e"
     },
     {
       "name": "prtv-feed-widget",
