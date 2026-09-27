@@ -6,7 +6,7 @@ metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
   version: "1.1"
-  date: "2026-09-26"
+  date: "2026-09-27"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
@@ -157,6 +157,20 @@ Saving is automatic. There is no save button; "Saved" appears after an edit. To 
 - Clicking blindly in series of double clicks — an extra click drags the element off the slide.
 - Judging widgets by thumbnails (they are blank there) or weather by the editor preview (fixed-pixel layout clips icons; the public page is fluid).
 - Expecting a free-standing "free licence": the free tier is one TV slot; without it the slideshow plays with a watermark.
+
+## 14. Tricks from the PRTV instructions
+
+- Hotkeys: arrows move the selected element, Shift+arrow faster; Del deletes; Esc deselects; Ctrl+Z, Ctrl+C / Ctrl+V also work in the Russian layout; Shift+click selects several elements.
+- Pan the canvas with the middle mouse button held, zoom with Ctrl + wheel. Elements and the background can extend past the canvas edge — used for "slide in from off-screen" animation.
+- The **element list** button selects the right element on a layered slide when a click lands on the background or a neighbouring image.
+- A slide can be saved as a **layout** (floppy icon on the thumbnail) and inserted into other slideshows with "Slide from layout" — handy for chains with a brand style.
+- A **permanent element** (logo, clock, radio, map) shows on every slide — do not copy it to each slide.
+- If the editor lags, switch off slide previews and "sticky edges".
+- Changes save instantly and undo works only until you leave the editor: duplicate a designer-made slideshow first and edit the copy.
+- Several people can edit one slideshow under one account; there are no roles.
+- **Mobile version**: new slideshow and element via the "three dots" at the top, drag with a long press, properties under "Element settings" at the bottom; convenient for changing prices from a phone.
+- Snowfall effect — GIF https://s.prtv.su/wp-content/uploads/snezhinki.gif added via "Photo" above the other layers; image collection — "Photo → Choose → From collection".
+- Free backgrounds: https://s.prtv.su/wp-content/uploads/shablony/city/city_N.jpg (1–32), …/textures/textureN.jpg (1–29), …/flowers/flowersN.jpg (1–18).
 
 ## Related
 
