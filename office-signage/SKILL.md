@@ -4,7 +4,7 @@ description: Plans screens for offices, corporate TV channels, factories and war
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-signage-content, signage-screen-design, prtv-feed-widget
@@ -73,6 +73,14 @@ Upgrade: move birthdays, menus, schedules and notices to sheets via «Лента
 ## 8. Building it in PRTV
 
 Start from a template or prtv-digital-signage. Several floors or entrances with the same content — one slideshow; the free first licence covers up to three screens at once, more screens need licences for simultaneous showing.
+
+## Tricks from PRTV practice
+
+- Factory: a slideshow instead of the paper notice board — hygiene rules, fire safety, PPE, first aid, evacuation plan, shift schedule and output from Excel, employee of the month.
+- Birthdays: a one-slide slideshow per person, scheduled on the date in a stream; or a Google Calendar of birthdays.
+- The joke widget "Until the end of the working day / until Friday".
+- Residential building: management company spending report, outages, meeting notice, lost pets, playground webcam, residents' poll via voting; local service ads as income for the building fund.
+- Business centre: vacant space with prices, floor plans, tenants' vacancies; tenants' ads as a sellable slot.
 
 ## What not to do
 
