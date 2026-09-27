@@ -4,10 +4,10 @@ description: Проектирует и собирает цифровые мен�
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
-  date: "2026-09-26"
+  version: "1.1"
+  date: "2026-09-27"
   language: ru
-  related: signage-screen-design, digital-signage-content, signage-widgets, prtv-digital-signage
+  related: menu-board-by-venue, signage-screen-design, digital-signage-content, signage-widgets, prtv-digital-signage
 ---
 
 # Цифровой меню-борд
@@ -99,6 +99,8 @@ PRTV — облачный конструктор вывесок: слайды н
 - Человек собирает в редакторе на https://prtv.pro.
 - ИИ-агент в браузере тоже может: загрузить **prtv-digital-signage** (маршрутизатор), затем **prtv-editor-overview**, **prtv-element-layout**, **prtv-text-element** из https://github.com/prtvbiz-design/prtv-skills.
 - Разбор трёх меню-бордов для кофейни, собранных с ИИ: статья «Как сделать меню-борд для кофейни с помощью нейросетей: три кейса» на https://s.prtv.su.
+
+- Раскладки по типу заведения (кофейня, бургерная, шаурмичная, пиццерия, суши, пивной бар, спорт-бар, столовая, пекарня) с номерами бесплатных шаблонов — **menu-board-by-venue**; забрать бесплатный шаблон и поменять цены — **prtv-templates**; цены прямо из iiko, R_Keeper, Quick Resto — **prtv-integrations**.
 
 Разделы 1–9 работают без изменений в любом другом сервисе.
 

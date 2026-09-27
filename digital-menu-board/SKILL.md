@@ -4,10 +4,10 @@ description: Designs and builds digital menu boards for TV screens in cafés, co
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
-  date: "2026-09-26"
+  version: "1.1"
+  date: "2026-09-27"
   language: en
-  related: signage-screen-design, digital-signage-content, signage-widgets, prtv-digital-signage
+  related: menu-board-by-venue, signage-screen-design, digital-signage-content, signage-widgets, prtv-digital-signage
 ---
 
 # Digital menu board
@@ -99,6 +99,8 @@ PRTV is a cloud editor for signage: slides in a 1920×1080 (or custom, incl. por
 - A human builds it in the editor at https://prtv.pro.
 - An AI browser agent can build it too: load **prtv-digital-signage** (router) and then **prtv-editor-overview**, **prtv-element-layout**, **prtv-text-element** from https://github.com/prtvbiz-design/prtv-skills.
 - Worked examples of three coffee-shop boards built with AI: https://s.prtv.su (article "Как сделать меню-борд для кофейни с помощью нейросетей: три кейса").
+
+- Layouts by venue type (coffee shop, burger bar, shawarma, pizzeria, sushi, beer bar, sports bar, canteen, bakery) with free template numbers: **menu-board-by-venue**; copying a free template and editing prices: **prtv-templates**; prices straight from iiko, R_Keeper, Quick Resto: **prtv-integrations**.
 
 Any other signage tool works with sections 1–9 unchanged.
 
