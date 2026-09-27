@@ -26,7 +26,7 @@ The fastest way to try PRTV is not to build from scratch but to take a free temp
 1. Sign in at https://prtv.pro (the user types their own login and password).
 2. Open **Templates** (prtv.pro/templates). Categories: All, Purchased, Paid, Calendar, Menu board, Business, School, Residential building, Misc and themed collections.
 3. Press **Copy** on the template.
-   - Error "slideshow groups not found" — the account has no group yet. Create one in the slideshow list (any name) and retry.
+   - Usually the copy is created at once. Rare case: the account has no slideshow group — then the error "slideshow groups not found"; create a group (any name) and retry.
    - Every Copy click creates another copy. Click once and wait for the editor to open.
 4. The copy opens at `prtv.pro/slideshow/<code>` named "Slideshow No. <number>". **Rename it at once** in the slideshow settings, or the list fills with identical copies.
 5. You can take single slides instead of a whole template: save a slide as a layout and insert it with "Slide from layout".
