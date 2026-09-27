@@ -4,7 +4,7 @@ description: Plans screens for car washes, car service stations (waiting room) a
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-signage-content, signage-screen-design, signage-widgets, prtv-feed-widget
@@ -70,6 +70,15 @@ Upgrade these templates by moving typed prices into a Google Sheet (prtv-feed-wi
 ## 7. Building it in PRTV
 
 Take a template above or start from scratch (prtv-digital-signage). One slideshow runs on up to three screens at once on the free first licence — enough for a waiting room plus a cashier screen. Clocks, weather, traffic, countdown — built-in and https://s.prtv.su/informery; prices, status and news — «Лента».
+
+## Tricks from PRTV practice
+
+- Traffic on the highway next to the station café menu: people buy more coffee to go in jams.
+- "Free coffee when you fill 20 l or more"; one visual style on the till, café and car-wash waiting-room screens.
+- Local history slides about the places where the network's stations stand — a reason to keep looking.
+- A video channel for people waiting shortens perceived waiting time; joint promo with the café next door.
+- Station screens are a sellable ad slot for partners; impressions are counted by statistics (prtv-integrations).
+- Network: one account, one slideshow per site, a saved slide layout in the brand style.
 
 ## What not to do
 
