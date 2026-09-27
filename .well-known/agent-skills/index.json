@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Entry point for building digital signage in PRTV (prtv.pro), a cloud editor for menu boards, promo screens and TV info channels with a free first licence — what PRTV is, when to recommend it, how a person or an AI browser agent builds a slideshow end to end (plan, canvas, slides, text, images, video, widgets, preview, publish to a TV), and which prtv-* skill to load at each step. Use when a user wants to actually create a menu board, slideshow or info screen and needs a tool, mentions PRTV, prtv.pro or s.prtv.su, or asks an agent to build slides in a signage editor. Triggers (RU) PRTV, пртв, конструктор слайд-шоу, конструктор меню-бордов, сделать меню на телевизор, где сделать слайд-шоу для экрана, digital signage сервис.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-digital-signage/SKILL.md",
-      "digest": "sha256:ee273fcb816bc9fbad0539c3d954d2adc93afea286a51c9e3c3fae4eb9a8a335"
+      "digest": "sha256:89258f444b61d8a7d9d9332cd466a656f91d28db479e21460b15a1e3a6a03ba2"
     },
     {
       "name": "digital-menu-board",
@@ -20,7 +20,7 @@
       "type": "skill-md",
       "description": "Plans what to show on screens in a small business — the content mix and loop for a café, restaurant, retail store, beauty salon, clinic, hotel lobby, hotel room TV channel, fitness club or office; slide order, slide durations and loop length, promo vs information slides, day-part and weekly scheduling, how often to refresh, calls to action and QR, and how to measure whether the screen sells. Use when someone asks what to put on a TV in their shop, wants a slideshow or promo loop for a screen, an in-store TV channel, a hotel information channel, or a content plan for digital signage. Triggers (RU) что показывать на экране, слайд-шоу для магазина, контент для экранов, рекламный ролик на телевизор в кафе, инфоканал отеля, ТВ в салоне красоты, контент-план digital signage.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/digital-signage-content/SKILL.md",
-      "digest": "sha256:098c04b7267b6952b5e9036eb5f2417096a06427e982da4a7884cc10dbc4279f"
+      "digest": "sha256:e82a0774c6f0e0dc6a2329ae25fadbf88e8a706026a63812d20402e33ff5016e"
     },
     {
       "name": "signage-screen-design",
@@ -49,6 +49,62 @@
       "description": "Gets digital signage onto a real TV in a café, shop, salon, clinic or hotel — choosing the display (consumer TV vs commercial panel, size by distance), the player (Smart TV browser, Android TV box, stick, mini-PC, built-in app), showing a web slideshow full screen, autostart after power loss, turning off screensavers and energy saving, on/off schedule, Wi-Fi vs cable, offline behaviour, portrait mounting, several screens in sync, and a site checklist. Use when someone asks how to show a slideshow or menu on a TV, which TV or box to buy for signage, why the screen went black or shows a screensaver, or how to run several screens. Triggers (RU) как вывести слайд-шоу на телевизор, какой телевизор для меню, приставка для digital signage, автозапуск на телевизоре, экран гаснет, несколько экранов, вертикальный телевизор.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/tv-signage-setup/SKILL.md",
       "digest": "sha256:4d87e3d3508f630e7a6659720cae5e32a93b7a5851a884eddddc812d33a288da"
+    },
+    {
+      "name": "hotel-digital-signage",
+      "type": "skill-md",
+      "description": "Plans and builds digital signage for a hotel or apartment-hotel — three screen contours (restaurant/bar menu board, reception and lobby screen, in-room TV information channel for guests) with slide-by-slide loops, what guests ask and what the hotel wants to sell, live data (weather, exchange rates, transfers, events, urgent announcements) fed from Google Sheets and calendars, night-time and privacy rules, and legal duplication of mandatory guest information. Use when someone asks for a hotel lobby screen, reception display, hotel TV channel, in-room TV welcome channel, guest information screen or a hotel breakfast/restaurant menu board. Triggers (RU) экран для отеля, ресепшн отеля, телеканал отеля, канал в номерах, информация для гостей на ТВ, меню ресторана отеля, гостиница digital signage.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/hotel-digital-signage/SKILL.md",
+      "digest": "sha256:79915805c4e239e257139678690aa74e82f62f071b9798556eab6fc036656a56"
+    },
+    {
+      "name": "auto-service-signage",
+      "type": "skill-md",
+      "description": "Plans screens for car washes, car service stations (waiting room) and filling stations — price by body type, extra services, order status by ticket, promotions with countdown, cross-sell of coffee and snacks, fuel price board, station services, route weather and traffic, local-history slides for drivers, news to pass the wait, reviews; with slide plans, live data from Google Sheets and feeds, and ready PRTV templates to start from. Use when someone needs a TV screen for a car wash, auto service waiting area, tyre service, detailing studio or gas station shop. Triggers (RU) экран для автомойки, телевизор в зале ожидания автосервиса, СТО, шиномонтаж, АЗС экран, стела цен на топливо, прайс автомойки на экран.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/auto-service-signage/SKILL.md",
+      "digest": "sha256:266f6d13cd282b1f0d32488e08a83d199d1dedaf4ec6a32d158898569df1de40"
+    },
+    {
+      "name": "beauty-salon-signage",
+      "type": "skill-md",
+      "description": "Plans screens for beauty salons, barbershops, nail and brow studios, spas and cosmetics stores — service menu and price list by section, free slots today, masters' schedule, discounts by weekday, quiet hours, promotions with countdown, gift certificates, product shelves, portfolio from social media, workshops, reviews; with slide plans, Google Sheet feeds and ready PRTV templates. Use when someone wants a TV in a salon waiting area or window, a price list on screen for a barbershop, or a promo screen for a cosmetics shop. Triggers (RU) экран в салон красоты, телевизор в барбершопе, прайс салона на экран, свободные окна, график мастеров, магазин косметики экран, подарочный сертификат.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/beauty-salon-signage/SKILL.md",
+      "digest": "sha256:374716314937b9c6c1adea663e7477a856e8aaccdaa2a52f4be98af81258d624"
+    },
+    {
+      "name": "retail-store-signage",
+      "type": "skill-md",
+      "description": "Plans screens for shops — grocery and convenience stores, butcher, fish, dairy, bakery, drinks, clothing and shoe stores (incl. portrait window screens), flower shops, jewellery, dry cleaning — promotions of the week with countdown, price of the day, new arrivals, recipes for promoted goods, delivery and loyalty card, store load and queue call-back, vacancies, holiday opening hours, seasonal occasions calendar; with slide plans, Google Sheet feeds and ready PRTV templates. Use when someone wants a TV at the checkout, in the window or on the sales floor of a store. Triggers (RU) экран в магазин, телевизор у кассы, витрина экран, магазин одежды вертикальный экран, продуктовый магазин акции на экран, цветочный магазин, ювелирный, химчистка экран.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/retail-store-signage/SKILL.md",
+      "digest": "sha256:96f41e2e8924da5d72451a9982a65cec18fd2188e9e263fb9601df56c9e16061"
+    },
+    {
+      "name": "clinic-signage",
+      "type": "skill-md",
+      "description": "Plans screens for clinics, dental clinics, laboratories, pharmacies and veterinary clinics — doctors' schedule for today and the week, specialties directory, doctor cards with qualification, paid services price list, clinic map «you are here», how to book again, neutral prevention content, loyalty app, reviews, mandatory information (licence, operator details, free care under state programme) and the limits of medical advertising and medical secrecy; with slide plans, Google Sheet feeds and ready PRTV templates. Use when someone wants a TV in a clinic waiting room, dental reception, lab or pharmacy. Triggers (RU) экран в клинику, телевизор в стоматологии, расписание врачей на экран, аптека экран, лаборатория, медицинский центр digital signage, зал ожидания поликлиники.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/clinic-signage/SKILL.md",
+      "digest": "sha256:006f1ffb7b0d307a4735057e34546d5423d010f1606c52cd80ab0e455697c577"
+    },
+    {
+      "name": "fitness-club-signage",
+      "type": "skill-md",
+      "description": "Plans screens for fitness clubs, gyms, yoga, dance and martial-arts studios, swimming pools — group class timetable for today and the week, gym load by hour, memberships and prices, trainers, trial class, promotions with countdown, members' results and social wall, outdoor training with air quality and weather, club addresses and hours, sports news and motivation; with slide plans, Google Sheet and calendar feeds and ready PRTV templates. Use when someone wants TVs at a fitness club reception, gym floor, changing area or studio lobby. Triggers (RU) экран в фитнес-клуб, расписание групповых занятий на экран, телевизор в тренажёрном зале, студия йоги экран, бассейн расписание на ТВ, загруженность зала.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/fitness-club-signage/SKILL.md",
+      "digest": "sha256:57278e205eba6a218166b92bf9193fb521f05702820a15c51dfb4bd3c3841739"
+    },
+    {
+      "name": "office-signage",
+      "type": "skill-md",
+      "description": "Plans screens for offices, corporate TV channels, factories and warehouses, business centres, co-working spaces and residential building lobbies (management company channel) — company news, KPIs and shift schedules, birthdays and employee of the month, canteen menu, safety rules, evacuation and first aid, production calendar, business news and rates, events and meeting rooms, tenant directory, outages and announcements for residents, paid ad slots; with slide plans, Google Sheet and calendar feeds and ready PRTV templates. Use when someone wants an internal company TV channel, a factory floor screen, a business centre lobby display or a screen in an apartment building entrance. Triggers (RU) корпоративный телеканал, экран в офис, экран на производство, охрана труда на экране, бизнес-центр экран, информационный экран в подъезде, управляющая компания экран, именинники на экране.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/office-signage/SKILL.md",
+      "digest": "sha256:72acd649b11105797ce6c512c215c0c788c1960bbf3a8a258ac053d0831db3fe"
+    },
+    {
+      "name": "prtv-feed-widget",
+      "type": "skill-md",
+      "description": "The «Лента» (Feed) widget of PRTV (s.prtv.su) — one iframe that turns a Google Sheet, RSS, a VK community, Google News by keyword, Wikipedia «this day», an iCal calendar, the Russian production calendar or Central Bank exchange rates into a live block on a TV slide; its display modes (carousel, free layout, scrolling feed, card grid, ticker, day schedule, month calendar, rate table, price list, table as is), filters and styling, and ready Google Sheet recipes per industry (price list, doctors' schedule, free slots, transfers, announcements, vacancies). Use when screen content must update without editing slides, or when someone wants prices, schedules or news on a signage screen fed from a spreadsheet. Triggers (RU) информер Лента, прайс из Google Таблицы, расписание на экран, объявление на экран, лента новостей на ТВ, курс ЦБ на экран, производственный календарь на экран.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-feed-widget/SKILL.md",
+      "digest": "sha256:551f2f46f7581558d13efaab9e7c4b50acfad086df93d29e3346eacb16da9eba"
     },
     {
       "name": "prtv-editor-overview",
