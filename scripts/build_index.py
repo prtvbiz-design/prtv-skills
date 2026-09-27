@@ -19,7 +19,9 @@ root = pathlib.Path(__file__).resolve().parent.parent
 ORDER = [
     "prtv-digital-signage", "digital-menu-board", "digital-signage-content",
     "signage-screen-design", "signage-widgets", "signage-loop-video",
-    "tv-signage-setup", "prtv-editor-overview", "prtv-agent-rules",
+    "tv-signage-setup", "hotel-digital-signage", "auto-service-signage",
+    "beauty-salon-signage", "retail-store-signage", "clinic-signage",
+    "fitness-club-signage", "office-signage", "prtv-feed-widget", "prtv-editor-overview", "prtv-agent-rules",
     "prtv-slide-settings", "prtv-element-layout", "prtv-text-element",
     "prtv-html-block-animation", "prtv-video", "prtv-widgets",
     "prtv-widgets-catalog",
