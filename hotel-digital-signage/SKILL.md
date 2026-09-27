@@ -4,7 +4,7 @@ description: Plans and builds digital signage for a hotel or apartment-hotel —
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-menu-board, digital-signage-content, signage-screen-design, prtv-feed-widget, tv-signage-setup
@@ -99,6 +99,15 @@ Use digital-menu-board. Hotel specifics: breakfast board (buffet hours, what is 
 ## 7. Building it in PRTV (prtv.pro)
 
 Three slideshows in the PRTV editor; the lobby and restaurant screens play in the TV browser or on an Android box by the public address, the in-room channel — the same way or through the hotel TV app. Live blocks: clocks and weather from https://s.prtv.su/informery, sheets, calendars, rates and news through the «Лента» widget (prtv-feed-widget). The first licence covers one slideshow on up to three screens at once free of charge; a room channel with many TVs on at the same time needs licences for the simultaneous peak, not per room. AI agents: prtv-digital-signage → prtv-editor-overview → prtv-feed-widget.
+
+## Tricks from PRTV practice
+
+- For a tour group from one city, a slide about their city: time, weather, traffic, webcam. Guests photograph and share it.
+- Several world-capital clocks and several route maps ("hotel → airport / station / sights") on one reception slide.
+- "Free coffee for a photo with the hotel hashtag" — a live feed of those photos in the lobby.
+- Paid slots: taxi numbers next to the traffic map, a sports bar next to the match schedule, central-bank rates and a map of exchange offices as a bank ad.
+- QR to rate the hotel on Yandex, to the hotel map, to book the next stay.
+- Streams: breakfast in the morning, excursions by day, restaurant and bar in the evening, reference info at night. Details — prtv-integrations.
 
 ## What not to do
 
