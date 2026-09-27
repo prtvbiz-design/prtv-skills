@@ -4,7 +4,7 @@ description: Plans screens for clinics, dental clinics, laboratories, pharmacies
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-signage-content, signage-screen-design, prtv-feed-widget
@@ -67,6 +67,15 @@ Upgrade: replace typed schedules and prices with sheet feeds (prtv-feed-widget);
 ## 6. Building it in PRTV
 
 Start from a template or prtv-digital-signage. One waiting-room screen plus a reception screen fit the free first licence (one slideshow, up to three screens at once).
+
+## Tricks from PRTV practice
+
+- Average dental waiting time is about 13 minutes: a 5–8 minute loop, 15–20 s per slide.
+- An "aquarium" — a separate calm slideshow with a video background for the waiting room; for children, cartoons next to the kids' dentistry promo.
+- Prices in foreign currency — next to a currency-rate widget.
+- Doctors' schedule from Excel (name, speciality, room, days) updates on screen by itself.
+- Pharmacy: map of the network's nearest pharmacies, delivery, "blood pressure check here"; a slot for drug makers backed by impression statistics.
+- QR to the clinic app ("collect points"), an ABC of specialities for children.
 
 ## What not to do
 
