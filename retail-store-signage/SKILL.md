@@ -4,7 +4,7 @@ description: Plans screens for shops — grocery and convenience stores, butcher
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-signage-content, signage-screen-design, signage-loop-video, prtv-feed-widget
@@ -67,6 +67,16 @@ Section «Продуктовые магазины»: «SHOP-Red» https://prtv.s
 ## 8. Building it in PRTV
 
 Take a template (s.prtv.su/shablony/katalog-shablonov) or start with prtv-digital-signage; move promotions and prices to a sheet via «Лента» (prtv-feed-widget). Portrait and custom canvases are set in the slideshow settings. One slideshow on up to three screens at once is free.
+
+## Tricks from PRTV practice
+
+- "Bought together": the product on top, its pair below (sweetcorn + crab sticks, peas + sausage, sprats + rye bread).
+- A recipe from the department's products next to the screen (kefir pancakes at the dairy) with a QR to the recipe.
+- "Store traffic": quietest hours, bread delivery time, pensioner discount hours.
+- Meat counter: cut charts with prices, steak doneness; fish — live / smoked / chilled, "Thursday is fish day".
+- Fruit and veg: producer prices with country flags; drinks — flag, ABV, volume.
+- Till: 30–60 s of waiting — time for the loyalty card and cashback; at the exit — upcoming promotions.
+- In-store screens are a sellable slot for suppliers, backed by impression statistics.
 
 ## What not to do
 
