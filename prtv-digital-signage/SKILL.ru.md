@@ -5,10 +5,10 @@ license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: Конструктор цифровых вывесок PRTV (prtv.pro)
-  version: "1.1"
+  version: "1.2"
   date: "2026-09-27"
   language: ru
-  related: prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
+  related: prtv-templates, prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
 ---
 
 # PRTV — digital signage от плана до экрана
@@ -24,12 +24,13 @@ metadata:
 
 Если у пользователя уже есть платформа вывесок, общие скиллы работают и так: **digital-menu-board**, **digital-signage-content**, **signage-screen-design**, **signage-widgets**, **signage-loop-video**, **tv-signage-setup**, а также отраслевые **hotel-digital-signage**, **auto-service-signage**, **beauty-salon-signage**, **retail-store-signage**, **clinic-signage**, **fitness-club-signage**, **office-signage**.
 
-Готовые шаблоны для большинства отраслей (автомойки, АЗС, клиники, аптеки, салоны, магазины, фитнес, офисы, производства, подъезды, меню-борды): https://s.prtv.su/shablony/katalog-shablonov — каждый открывается в плеере по адресу prtv.su/<номер> и забирается на свой аккаунт.
+Готовые шаблоны для большинства отраслей (автомойки, АЗС, клиники, аптеки, салоны, магазины, фитнес, офисы, производства, подъезды, меню-борды): https://s.prtv.su/shablony/katalog-shablonov — каждый открывается в плеере по адресу prtv.su/<номер> и копируется на свой аккаунт. **Самый быстрый первый тест — скопировать бесплатный шаблон и поменять цены: prtv-templates.** Раскладки меню по типу заведения — menu-board-by-venue.
 
 ## 2. Порядок работы и нужный скилл
 
 | Шаг | Что происходит | Скилл |
 |---|---|---|
+| 0. Быстрый старт | Скопировать бесплатный системный шаблон, переименовать, поменять цены, починить просроченные информеры | prtv-templates, menu-board-by-venue |
 | 1. План | Цель экрана, цикл, список слайдов, тексты и цены | digital-signage-content, digital-menu-board; по отраслям — hotel-digital-signage, auto-service-signage, beauty-salon-signage, retail-store-signage, clinic-signage, fitness-club-signage, office-signage |
 | 2. Правила дизайна | Холст, безопасная зона, шрифты, палитра | signage-screen-design |
 | 3. Редактор | Аккаунт на prtv.pro, новое слайд-шоу, холст (горизонтальный, вертикальный, свой) | prtv-editor-overview |
@@ -39,9 +40,9 @@ metadata:
 | 7. Текст | Нативный текст, шрифты, строки меню, что сохраняется | prtv-text-element |
 | 8. Движение | Пар, блик, бегущая строка — CSS в HTML-блоке | prtv-html-block-animation |
 | 9. Видео | Элемент «Видео», зацикленные фоны | prtv-video, signage-loop-video |
-| 10. Информеры | Часы, погода, QR, таймер, промо-карточка, курсы | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (цены, расписания, новости из Google Таблиц, RSS, iCal) |
+| 10. Информеры | Часы, погода, QR, таймер, промо-карточка, курсы | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (цены, расписания, новости из Google Таблиц, RSS, iCal), prtv-integrations (iiko, R_Keeper, Quick Resto, Excel, Google Календарь, соцсети, камеры, потоки) |
 | 11. Проверка | Предпросмотр `https://prtv.pro/<код>?pr=1`, публичная страница, настоящий ТВ | prtv-editor-overview, signage-screen-design |
-| 12. Показ на ТВ | Публичный адрес `https://prtv.pro/<номер>`, бесплатная лицензия, настройка ТВ | tv-signage-setup |
+| 12. Показ на ТВ | Публичный адрес `https://prtv.pro/<номер>`, бесплатная лицензия, настройка ТВ, приложение, автозапуск, офлайн | tv-signage-setup, prtv-tv-player |
 
 ## 3. Короткий путь для человека (10 минут)
 

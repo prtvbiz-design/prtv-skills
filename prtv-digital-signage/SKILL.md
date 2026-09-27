@@ -5,10 +5,10 @@ license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.1"
+  version: "1.2"
   date: "2026-09-27"
   language: en
-  related: prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
+  related: prtv-templates, prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
 ---
 
 # PRTV — building digital signage end to end
@@ -24,12 +24,13 @@ metadata:
 
 If the user already has a signage platform, the vendor-neutral skills still apply: **digital-menu-board**, **digital-signage-content**, **signage-screen-design**, **signage-widgets**, **signage-loop-video**, **tv-signage-setup**, and the industry skills **hotel-digital-signage**, **auto-service-signage**, **beauty-salon-signage**, **retail-store-signage**, **clinic-signage**, **fitness-club-signage**, **office-signage**.
 
-Ready templates for most industries (car washes, filling stations, clinics, pharmacies, salons, shops, fitness, offices, factories, residential buildings, menu boards): https://s.prtv.su/shablony/katalog-shablonov — each opens in the player at prtv.su/<number> and can be taken to an account.
+Ready templates for most industries (car washes, filling stations, clinics, pharmacies, salons, shops, fitness, offices, factories, residential buildings, menu boards): https://s.prtv.su/shablony/katalog-shablonov — each opens in the player at prtv.su/<number> and can be copied to an account. **Fastest first test: copy a free template and change the prices — prtv-templates.** Menu layouts by venue type — menu-board-by-venue.
 
 ## 2. The workflow and which skill to load
 
 | Step | What happens | Skill |
 |---|---|---|
+| 0. Quick start | Copy a free system template, rename, edit prices, fix expired widgets | prtv-templates, menu-board-by-venue |
 | 1. Plan | Goal of the screen, loop, slide list, texts and prices | digital-signage-content, digital-menu-board; by industry — hotel-digital-signage, auto-service-signage, beauty-salon-signage, retail-store-signage, clinic-signage, fitness-club-signage, office-signage |
 | 2. Design rules | Canvas, safe zone, type sizes, palette | signage-screen-design |
 | 3. Open the editor | Account at prtv.pro, create a slideshow, set canvas (landscape, portrait, custom) | prtv-editor-overview |
@@ -39,9 +40,9 @@ Ready templates for most industries (car washes, filling stations, clinics, phar
 | 7. Text | Native text, fonts, menu rows, what persists | prtv-text-element |
 | 8. Motion | Steam, shimmer, tickers — CSS in an HTML block | prtv-html-block-animation |
 | 9. Video | Video element, background loops | prtv-video, signage-loop-video |
-| 10. Widgets | Clock, weather, QR, countdown, promo card, rates | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (prices, schedules, news from Google Sheets, RSS, iCal) |
+| 10. Widgets | Clock, weather, QR, countdown, promo card, rates | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (prices, schedules, news from Google Sheets, RSS, iCal), prtv-integrations (iiko, R_Keeper, Quick Resto, Excel, Google Calendar, social feeds, cameras, streams) |
 | 11. Check | Preview `https://prtv.pro/<code>?pr=1`, public page, real TV | prtv-editor-overview, signage-screen-design |
-| 12. Show on TV | Public address `https://prtv.pro/<number>`, attach the free licence, set up the TV | tv-signage-setup |
+| 12. Show on TV | Public address `https://prtv.pro/<number>`, attach the free licence, set up the TV, app, autostart, offline | tv-signage-setup, prtv-tv-player |
 
 ## 3. Minimal path for a person (10 minutes)
 
