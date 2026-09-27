@@ -60,6 +60,8 @@ metadata:
 - **Канал в номерах**: меню ресторана и room service, спа, поздний выезд, гид по городу.
 - **Фитнес**: расписание занятий, тренеры, персональные тренировки, челленджи.
 
+Полные раскладки слайдов по отраслям: hotel-digital-signage, auto-service-signage, beauty-salon-signage, retail-store-signage, clinic-signage, fitness-club-signage, office-signage.
+
 ## 6. Производство контента
 
 - Реальные фото заведения и продуктов; снимки на телефон при хорошем дневном свете лучше стока.

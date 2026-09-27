@@ -60,6 +60,8 @@ A screen with three goals achieves none. If a location has several goals, use se
 - **Hotel room channel**: restaurant and room service menu, spa, late checkout offer, city guide.
 - **Fitness**: class timetable, trainers, personal training offer, challenges.
 
+Full slide plans per industry: hotel-digital-signage, auto-service-signage, beauty-salon-signage, retail-store-signage, clinic-signage, fitness-club-signage, office-signage.
+
 ## 6. Content production
 
 - Use real photos of the venue and its products; phone photos in good daylight beat stock.
