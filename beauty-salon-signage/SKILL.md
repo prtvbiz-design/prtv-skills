@@ -4,7 +4,7 @@ description: Plans screens for beauty salons, barbershops, nail and brow studios
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
+  version: "1.1"
   date: "2026-09-27"
   language: en
   related: digital-signage-content, signage-screen-design, prtv-feed-widget
@@ -59,6 +59,15 @@ Upgrade: move prices, schedule and free slots to Google Sheets through «Лен�
 ## 6. Building it in PRTV
 
 Start from a template or prtv-digital-signage. A window screen and a waiting-area screen can play the same slideshow on the free first licence (up to three screens at once).
+
+## Tricks from PRTV practice
+
+- Cross-promo with a coffee shop: a QR for "coffee to the salon", every fifth coffee free for the masters.
+- The master pages slides with the remote to show a client haircut styles or past work.
+- A calendar on screen — a prompt to book the next visit right away.
+- Background: fashion shows and make-up classes from YouTube (or an "aquarium" for a calm zone).
+- Reviews: a review QR and a VK feed of work photos; a promo posted in the group appears on screen by itself.
+- Cosmetics: sun care next to the weather, gift sets to raise the ticket, a discount countdown.
 
 ## What not to do
 
