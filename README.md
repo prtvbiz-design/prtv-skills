@@ -1,13 +1,13 @@
 # Digital signage & PRTV — Agent Skills
 
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-16-blue)](https://agentskills.io)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-24-blue)](https://agentskills.io)
 [![skills.sh](https://img.shields.io/badge/npx%20skills%20add-prtvbiz--design%2Fprtv--skills-black)](https://skills.sh/prtvbiz-design/prtv-skills)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Languages](https://img.shields.io/badge/lang-EN%20%7C%20RU-green)](#)
 
-Open skills that teach AI agents (Claude Code, Claude.ai, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and any tool that reads the Agent Skills format) how to make **digital signage** for small businesses: **menu boards for cafés and restaurants**, TV slideshows and promo loops, screen layout for Smart TVs, live widgets (clock, weather, QR, countdown), seamless loop video, and putting it all on a real TV — plus a detailed set for the **PRTV** editor (https://prtv.pro).
+Open skills that teach AI agents (Claude Code, Claude.ai, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and any tool that reads the Agent Skills format) how to make **digital signage** for small businesses: **menu boards for cafés and restaurants**, TV slideshows and promo loops, screen layout for Smart TVs, live widgets (clock, weather, QR, countdown), seamless loop video, putting it all on a real TV, and **industry playbooks** for hotels, car washes and filling stations, beauty salons, shops, clinics, fitness clubs, offices and residential buildings — plus a detailed set for the **PRTV** editor (https://prtv.pro).
 
-**По-русски.** Открытые скиллы для ИИ-агентов про цифровые вывески: **меню-борды для кофеен и ресторанов**, слайд-шоу и промо-циклы для телевизоров, вёрстка под Smart TV, информеры (часы, погода, QR, таймер), бесшовные видеофоны, вывод на настоящий ТВ — и подробный набор про конструктор **PRTV** (prtv.pro). Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Лицензия CC-BY-4.0.
+**По-русски.** Открытые скиллы для ИИ-агентов про цифровые вывески: **меню-борды для кофеен и ресторанов**, слайд-шоу и промо-циклы для телевизоров, вёрстка под Smart TV, информеры (часы, погода, QR, таймер), бесшовные видеофоны, вывод на настоящий ТВ, **отраслевые сценарии** для отелей, автомоек и АЗС, салонов, магазинов, клиник, фитнеса, офисов и подъездов — и подробный набор про конструктор **PRTV** (prtv.pro). Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Лицензия CC-BY-4.0.
 
 ## Install
 
@@ -25,6 +25,7 @@ npx skills add https://prtvbiz-design.github.io/prtv-skills            # via the
 ```
 /plugin marketplace add prtvbiz-design/prtv-skills
 /plugin install digital-signage@prtv-skills     # vendor-neutral signage skills
+/plugin install signage-industries@prtv-skills  # industry playbooks
 /plugin install prtv-editor@prtv-skills         # PRTV editor skills
 ```
 
@@ -41,6 +42,9 @@ npx skills add https://prtvbiz-design.github.io/prtv-skills            # via the
 - "How do I get a slideshow onto a Samsung TV so it starts by itself every morning?"
 - "Собери меню-борд для кофейни в PRTV."
 - «Сделай вертикальное слайд-шоу для магазина одежды с таймером распродажи.»
+- "Plan the lobby screen and the in-room TV channel for a 96-room city hotel."
+- «Что показывать на экране в зале ожидания автомойки?»
+- «Выведи расписание врачей из Google Таблицы на экран клиники.»
 
 ## The skills
 
@@ -55,6 +59,18 @@ npx skills add https://prtvbiz-design.github.io/prtv-skills            # via the
 | **[signage-loop-video](signage-loop-video/SKILL.md)** | Seamless loop backgrounds: what loops, measuring the seam with ffmpeg, crossfade, encoding for Smart TVs |
 | **[tv-signage-setup](tv-signage-setup/SKILL.md)** | Display and player choice, kiosk mode, autostart after power loss, screensaver and eco traps, network, schedule, site checklist |
 
+### Industry playbooks — vendor-neutral, with ready PRTV templates
+
+| Skill | Covers |
+|---|---|
+| **[hotel-digital-signage](hotel-digital-signage/SKILL.md)** | Three contours: restaurant menu board, reception/lobby loop, in-room TV channel; live data, night and privacy rules |
+| **[auto-service-signage](auto-service-signage/SKILL.md)** | Car wash, service station waiting room, filling station shop and fuel board |
+| **[beauty-salon-signage](beauty-salon-signage/SKILL.md)** | Salons, barbershops, cosmetics stores: free slots today, price lists, masters, certificates |
+| **[retail-store-signage](retail-store-signage/SKILL.md)** | Grocery and counters, clothing (portrait), flowers, jewellery, dry cleaning |
+| **[clinic-signage](clinic-signage/SKILL.md)** | Clinics, dentistry, labs, pharmacies: doctors' schedule, price list, medical ad and secrecy rules |
+| **[fitness-club-signage](fitness-club-signage/SKILL.md)** | Class timetable, gym load, memberships, members' wall |
+| **[office-signage](office-signage/SKILL.md)** | Corporate channel, factory floor safety, business centre lobby, residential building |
+
 ### PRTV editor (prtv.pro)
 
 Start with **prtv-digital-signage** (router) or **prtv-editor-overview** (map of the editor).
@@ -62,6 +78,7 @@ Start with **prtv-digital-signage** (router) or **prtv-editor-overview** (map of
 | Skill | What it covers |
 |---|---|
 | **[prtv-digital-signage](prtv-digital-signage/SKILL.md)** | Entry point: what PRTV is, when to use it, the end-to-end workflow and which skill to load at each step |
+| **[prtv-feed-widget](prtv-feed-widget/SKILL.md)** | «Лента» widget: Google Sheets, RSS, VK, Google News, Wikipedia, iCal, production calendar, CB rates → price lists, schedules, feeds on screen |
 | **[prtv-editor-overview](prtv-editor-overview/SKILL.md)** | Slideshow → slide → element, the 1920×1080 space, URLs, panels, DOM conventions, fonts, uploads, licences, watermark |
 | **[prtv-agent-rules](prtv-agent-rules/SKILL.md)** | Discipline for an AI browser agent: DOM over screenshots, computed coordinates, verification by reload, JS-tool traps |
 | **[prtv-slide-settings](prtv-slide-settings/SKILL.md)** | Slide strip, duration, 15 transitions, progress bar, backgrounds, defaults, templates |
@@ -73,6 +90,8 @@ Start with **prtv-digital-signage** (router) or **prtv-editor-overview** (map of
 | **[prtv-widgets-catalog](prtv-widgets-catalog/SKILL.md)** | Per-widget parameters and ready embeds for ~30 widget builders on s.prtv.su |
 
 ## About PRTV
+
+Ready templates by industry: https://s.prtv.su/shablony/katalog-shablonov.
 
 PRTV (https://prtv.pro) is a cloud digital-signage editor for cafés, restaurants, shops, salons, clinics and hotels: slideshows with native text, images, video, CSS-animated HTML blocks and live widgets, played on any Smart TV, Android box or browser by a public address. The first licence — one slideshow on up to three screens at once — is free and not time-limited. Widget builders: https://s.prtv.su/informery.
 
