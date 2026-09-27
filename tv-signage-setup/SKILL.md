@@ -4,10 +4,10 @@ description: Gets digital signage onto a real TV in a café, shop, salon, clinic
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
-  date: "2026-09-26"
+  version: "1.1"
+  date: "2026-09-27"
   language: en
-  related: signage-screen-design, digital-signage-content, prtv-digital-signage
+  related: signage-screen-design, digital-signage-content, prtv-digital-signage, prtv-tv-player
 ---
 
 # Putting signage on a real TV
@@ -74,7 +74,7 @@ For a single café screen an Android TV box with a kiosk browser (or the signage
 
 ## 8. With PRTV (prtv.pro)
 
-A PRTV slideshow plays at its public address `https://prtv.pro/<number>` in any TV browser or on an Android box; the same number is typed on the device. The first licence — one slideshow on up to three screens simultaneously — is free and permanent; beyond the limit the extra screens show a watermark rather than going dark. Use the host in instructions to staff (prtv.pro), not only the number. Building the slideshow with an AI agent: **prtv-digital-signage** in https://github.com/prtvbiz-design/prtv-skills.
+A PRTV slideshow plays at its public address `https://prtv.pro/<number>` in any TV browser or on an Android box; the same number is typed on the device. The first licence — one slideshow on up to three screens simultaneously — is free and permanent; beyond the limit the extra screens show a watermark rather than going dark. Use the host in instructions to staff (prtv.pro), not only the number. The app, autostart, HDMI-CEC, offline from a USB stick, speeding up weak TVs: **prtv-tv-player**. Building the slideshow with an AI agent: **prtv-digital-signage** in https://github.com/prtvbiz-design/prtv-skills.
 
 ## What not to do
 

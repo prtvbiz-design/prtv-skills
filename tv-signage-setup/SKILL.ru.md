@@ -4,10 +4,10 @@ description: Выводит digital signage на настоящий телеви
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
-  date: "2026-09-26"
+  version: "1.1"
+  date: "2026-09-27"
   language: ru
-  related: signage-screen-design, digital-signage-content, prtv-digital-signage
+  related: signage-screen-design, digital-signage-content, prtv-digital-signage, prtv-tv-player
 ---
 
 # Как вывести вывеску на настоящий телевизор
@@ -74,7 +74,7 @@ metadata:
 
 ## 8. С PRTV (prtv.pro)
 
-Слайд-шоу PRTV показывается по публичному адресу `https://prtv.pro/<номер>` в любом ТВ-браузере или на Android-приставке; тот же номер вводится на устройстве. Первая лицензия — одно слайд-шоу на трёх экранах одновременно — бесплатна и бессрочна; экраны сверх лимита показывают водяной знак, а не гаснут. В инструкциях персоналу указывать хост (prtv.pro), а не только номер. Собрать слайд-шоу с ИИ-агентом — **prtv-digital-signage** в https://github.com/prtvbiz-design/prtv-skills.
+Слайд-шоу PRTV показывается по публичному адресу `https://prtv.pro/<номер>` в любом ТВ-браузере или на Android-приставке; тот же номер вводится на устройстве. Первая лицензия — одно слайд-шоу на трёх экранах одновременно — бесплатна и бессрочна; экраны сверх лимита показывают водяной знак, а не гаснут. В инструкциях персоналу указывать хост (prtv.pro), а не только номер. Приложение, автозапуск, HDMI-CEC, офлайн с флешки, ускорение на слабых ТВ — **prtv-tv-player**. Собрать слайд-шоу с ИИ-агентом — **prtv-digital-signage** в https://github.com/prtvbiz-design/prtv-skills.
 
 ## Чего не делать
 
