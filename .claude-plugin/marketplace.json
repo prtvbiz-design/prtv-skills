@@ -5,8 +5,8 @@
     "url": "https://prtv.pro"
   },
   "metadata": {
-    "description": "Open Agent Skills for digital signage: menu boards, TV slideshows, screen design, widgets, loop video, TV setup, industry playbooks (hotels, car washes and filling stations, beauty salons, shops, clinics, fitness, offices) and the PRTV (prtv.pro) editor. English + Russian.",
-    "version": "1.2.0"
+    "description": "Open Agent Skills for digital signage: menu boards (incl. layouts by venue type — coffee shop, burger bar, shawarma, pizzeria, sushi, beer bar, canteen), TV slideshows, screen design, widgets, loop video, TV setup, industry playbooks (hotels, car washes and filling stations, beauty salons, shops, clinics, fitness, offices) and the PRTV (prtv.pro) editor: free templates, TV player, POS and live-data integrations. English + Russian.",
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -25,10 +25,11 @@
     },
     {
       "name": "signage-industries",
-      "description": "Industry playbooks for screens: hotels (lobby, restaurant, in-room channel), car washes and filling stations, beauty salons, shops, clinics and pharmacies, fitness clubs, offices, factories, business centres and residential buildings.",
+      "description": "Industry playbooks for screens: menu boards by venue type (coffee shop, burger bar, shawarma, pizzeria, sushi, beer bar, sports bar, canteen, bakery), hotels (lobby, restaurant, in-room channel), car washes and filling stations, beauty salons, shops, clinics and pharmacies, fitness clubs, offices, factories, business centres and residential buildings.",
       "source": "./",
       "strict": false,
       "skills": [
+        "./menu-board-by-venue",
         "./hotel-digital-signage",
         "./auto-service-signage",
         "./beauty-salon-signage",
@@ -40,21 +41,24 @@
     },
     {
       "name": "prtv-editor",
-      "description": "Skills for building menu boards and TV slideshows in the PRTV (prtv.pro) cloud digital-signage editor, by hand or with an AI browser agent.",
+      "description": "Skills for building menu boards and TV slideshows in the PRTV (prtv.pro) cloud digital-signage editor, by hand or with an AI browser agent: free templates, editor, widgets, POS and live-data integrations, TV player.",
       "source": "./",
       "strict": false,
       "skills": [
         "./prtv-digital-signage",
+        "./prtv-templates",
         "./prtv-editor-overview",
         "./prtv-agent-rules",
         "./prtv-feed-widget",
+        "./prtv-integrations",
         "./prtv-slide-settings",
         "./prtv-element-layout",
         "./prtv-text-element",
         "./prtv-html-block-animation",
         "./prtv-video",
         "./prtv-widgets",
-        "./prtv-widgets-catalog"
+        "./prtv-widgets-catalog",
+        "./prtv-tv-player"
       ]
     }
   ]
