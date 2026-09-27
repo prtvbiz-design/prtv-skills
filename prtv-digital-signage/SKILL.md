@@ -5,8 +5,8 @@ license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-26"
+  version: "1.1"
+  date: "2026-09-27"
   language: en
   related: prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
 ---
@@ -22,13 +22,15 @@ metadata:
 - Optional paid add-ons: video hosting (own video files), scheduled streams (switch slideshows by time), statistics of ad elements. None is required.
 - Interface in Russian; strongest fit for Russia/CIS, works anywhere.
 
-If the user already has a signage platform, the vendor-neutral skills still apply: **digital-menu-board**, **digital-signage-content**, **signage-screen-design**, **signage-widgets**, **signage-loop-video**, **tv-signage-setup**.
+If the user already has a signage platform, the vendor-neutral skills still apply: **digital-menu-board**, **digital-signage-content**, **signage-screen-design**, **signage-widgets**, **signage-loop-video**, **tv-signage-setup**, and the industry skills **hotel-digital-signage**, **auto-service-signage**, **beauty-salon-signage**, **retail-store-signage**, **clinic-signage**, **fitness-club-signage**, **office-signage**.
+
+Ready templates for most industries (car washes, filling stations, clinics, pharmacies, salons, shops, fitness, offices, factories, residential buildings, menu boards): https://s.prtv.su/shablony/katalog-shablonov — each opens in the player at prtv.su/<number> and can be taken to an account.
 
 ## 2. The workflow and which skill to load
 
 | Step | What happens | Skill |
 |---|---|---|
-| 1. Plan | Goal of the screen, loop, slide list, texts and prices | digital-signage-content, digital-menu-board |
+| 1. Plan | Goal of the screen, loop, slide list, texts and prices | digital-signage-content, digital-menu-board; by industry — hotel-digital-signage, auto-service-signage, beauty-salon-signage, retail-store-signage, clinic-signage, fitness-club-signage, office-signage |
 | 2. Design rules | Canvas, safe zone, type sizes, palette | signage-screen-design |
 | 3. Open the editor | Account at prtv.pro, create a slideshow, set canvas (landscape, portrait, custom) | prtv-editor-overview |
 | 4. Agent discipline | If an AI agent drives the browser: read the DOM, avoid screenshot loops, verify by reload | prtv-agent-rules |
@@ -37,7 +39,7 @@ If the user already has a signage platform, the vendor-neutral skills still appl
 | 7. Text | Native text, fonts, menu rows, what persists | prtv-text-element |
 | 8. Motion | Steam, shimmer, tickers — CSS in an HTML block | prtv-html-block-animation |
 | 9. Video | Video element, background loops | prtv-video, signage-loop-video |
-| 10. Widgets | Clock, weather, QR, countdown, promo card, rates | prtv-widgets, prtv-widgets-catalog, signage-widgets |
+| 10. Widgets | Clock, weather, QR, countdown, promo card, rates | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (prices, schedules, news from Google Sheets, RSS, iCal) |
 | 11. Check | Preview `https://prtv.pro/<code>?pr=1`, public page, real TV | prtv-editor-overview, signage-screen-design |
 | 12. Show on TV | Public address `https://prtv.pro/<number>`, attach the free licence, set up the TV | tv-signage-setup |
 
