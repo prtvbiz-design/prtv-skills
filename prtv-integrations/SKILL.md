@@ -4,15 +4,15 @@ description: Live data and automation in PRTV (prtv.pro) — menus and prices fr
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
-  version: "1.0"
-  date: "2026-09-27"
+  version: "1.1"
+  date: "2026-10-10"
   language: en
-  related: prtv-feed-widget, prtv-widgets-catalog, prtv-video, prtv-tv-player, menu-board-by-venue
+  related: prtv-informer-google, prtv-informer-rss, prtv-feed-widget, prtv-widgets-catalog, prtv-video, prtv-tv-player, menu-board-by-venue
 ---
 
 # PRTV: live data, schedules, statistics
 
-A screen that updates itself never goes stale. Rule: whatever staff change (prices, stop list, timetable, deal of the day) should come from the system where they already change it. Google Sheets, RSS, iCal, central-bank rates and the production calendar go through the «Лента» (Feed) widget — skill **prtv-feed-widget**.
+A screen that updates itself never goes stale. Rule: whatever staff change (prices, stop list, timetable, deal of the day) should come from the system where they already change it. Google Sheets, Google Calendar and Google News go through the «PRTV Google» widget (skill **prtv-informer-google**); site news from RSS through «PRTV RSS» (**prtv-informer-rss**); central-bank rates and the production calendar through the «Лента» (Feed) widget (**prtv-feed-widget**).
 
 ## 1. POS systems — menus and prices automatically
 
@@ -26,8 +26,8 @@ Connect once in prtv.pro: **Settings → Restaurant services** (prtv.pro/setting
 ## 2. Tables and calendars
 
 - **Excel / table**: the Table element (new or imported from Excel) or an online table in an HTML block. Changes reach the TV within minutes. Cases: canteen menu per day, doctors' schedule (name, speciality, room, days), shifts and KPIs on a factory floor, salon masters' schedule.
-- **Google Sheet** with prices and timetables — via the Feed widget (prtv-feed-widget).
-- **Google Calendar**: make the calendar public, copy its ID from "Integrate calendar" → https://s.prtv.su/informery/google-kalendar (day / week / month view, font, colours) → code into an HTML block. Used for school timetables, doctors' hours, shifts, staff birthdays.
+- **Google Sheet** with prices, promotions and timetables — via «PRTV Google» (prtv-informer-google): price list, tiles, table as is, announcements with show dates.
+- **Google Calendar**: make the calendar public, copy its ID from "Integrate calendar" → https://s.prtv.su/informery/google-kalendar (day / week / month view, font, colours) → code into an HTML block. Used for school timetables, doctors' hours, shifts, staff birthdays. A schedule by day, "today and tomorrow" and the next event from the same calendar (iCal address, recurring events, time zone) — the «PRTV Google» widget (prtv-informer-google).
 - **Google Slides**: File → Share → Publish to the web → Embed → iframe into an HTML block.
 
 ## 3. Social feeds — content arrives by itself
