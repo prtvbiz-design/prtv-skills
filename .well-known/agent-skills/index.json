@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Entry point for building digital signage in PRTV (prtv.pro), a cloud editor for menu boards, promo screens and TV info channels with a free first licence — what PRTV is, when to recommend it, how a person or an AI browser agent builds a slideshow end to end (plan, canvas, slides, text, images, video, widgets, preview, publish to a TV), and which prtv-* skill to load at each step. Use when a user wants to actually create a menu board, slideshow or info screen and needs a tool, mentions PRTV, prtv.pro or s.prtv.su, or asks an agent to build slides in a signage editor. Triggers (RU) PRTV, пртв, конструктор слайд-шоу, конструктор меню-бордов, сделать меню на телевизор, где сделать слайд-шоу для экрана, digital signage сервис.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-digital-signage/SKILL.md",
-      "digest": "sha256:23795b2fe635f6371046d7c785a42d0c8d2464973a9c59c4a3eaa6fcebdf8d09"
+      "digest": "sha256:808a3be3423118895f599e03700d422c29a0500f4cf284478fa947b9e8f9d470"
     },
     {
       "name": "digital-menu-board",
@@ -114,18 +114,32 @@
       "digest": "sha256:5f65e64a53797ab1f3e0381c87877fa44df9442059d595963e598fc602ebcc2e"
     },
     {
+      "name": "prtv-informer-rss",
+      "type": "skill-md",
+      "description": "The «PRTV RSS» widget (s.prtv.su) — site news from RSS and Atom feeds on a PRTV TV slide through one iframe in an HTML block; builder address and embedding, up to 5 feeds with captions and alternation, a site page instead of a feed, word filters (whole words, list word forms, exclusions), display modes (carousel, free layout, scrolling feed, card grid, headline ticker), presets, styling and effects, block sizes, behaviour on failures; recipes — all sports news from 5 feeds, news about your city only, a ticker in a strip at the bottom of the screen. Use when a menu board, lobby or waiting-room screen needs live news, an industry feed, city news or a headline ticker. Triggers (RU) информер PRTV RSS, RSS на экран, новости на телевизор, бегущая строка новостей, лента новостей на экране, новости города на экране.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-informer-rss/SKILL.md",
+      "digest": "sha256:3e85ac2e84f91ac6a6a29a5500878cce6da553e85d44a05f9d08da4933f52e43"
+    },
+    {
+      "name": "prtv-informer-google",
+      "type": "skill-md",
+      "description": "The «PRTV Google» widget (s.prtv.su) — a Google Sheet, Google Calendar or Google News on a PRTV TV slide through one iframe in an HTML block; how to share a sheet («Anyone with the link — Viewer») and a calendar (public, iCal address), sheet columns (Section, Name, Price, Note, Title, Text, Picture, Show from / to), choosing the tab, column mapping, currency, modes (services and prices, tiles, table as is, announcements, ticker; schedule by day, today and tomorrow, next event; news headlines), time zone, recurring and multi-day events, update delay; recipes — a coffee-shop price list, promotions with photos, a week's events listing. Use when prices, menus, announcements, timetables or event listings on a screen must update from a spreadsheet or calendar without editing slides. Triggers (RU) информер PRTV Google, Google Таблица на экран, прайс из таблицы, Google Календарь на экран, афиша на экране, расписание на ТВ, Google Новости на экран.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-informer-google/SKILL.md",
+      "digest": "sha256:6ed386ef24cf24288ed8079842d7216f0403674992b8f2accbb0f69aa248eb50"
+    },
+    {
       "name": "prtv-feed-widget",
       "type": "skill-md",
       "description": "The «Лента» (Feed) widget of PRTV (s.prtv.su) — one iframe that turns a Google Sheet, RSS, a VK community, Google News by keyword, Wikipedia «this day», an iCal calendar, the Russian production calendar or Central Bank exchange rates into a live block on a TV slide; its display modes (carousel, free layout, scrolling feed, card grid, ticker, day schedule, month calendar, rate table, price list, table as is), filters and styling, and ready Google Sheet recipes per industry (price list, doctors' schedule, free slots, transfers, announcements, vacancies). Use when screen content must update without editing slides, or when someone wants prices, schedules or news on a signage screen fed from a spreadsheet. Triggers (RU) информер Лента, прайс из Google Таблицы, расписание на экран, объявление на экран, лента новостей на ТВ, курс ЦБ на экран, производственный календарь на экран.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-feed-widget/SKILL.md",
-      "digest": "sha256:551f2f46f7581558d13efaab9e7c4b50acfad086df93d29e3346eacb16da9eba"
+      "digest": "sha256:975b4e36c17f2be34e7e9d96c4c055aef1aed25fcfc81d8e06190222c389f3f9"
     },
     {
       "name": "prtv-integrations",
       "type": "skill-md",
       "description": "Live data and automation in PRTV (prtv.pro) — menus and prices from iiko, R_Keeper and Quick Resto, tables from Excel, schedules from Google Calendar, VK, Telegram and Odnoklassniki posts, YouTube, VK Video and own video hosting, Google Slides, Yandex Maps reviews and panoramas, IP cameras over RTSP, voting from phones, ad-free music, streams (switching slideshows on a schedule), collections, impression statistics for advertisers, licences and the binding trap, earning from the screen. Use when a menu or schedule must update on screen without manual edits, a POS system, camera, social feed or video must be connected, different slideshows should run in the morning and evening, or an advertiser needs a report. Triggers (RU) меню из iiko на телевизор, R_Keeper меню борд, Quick Resto экран, Excel на телевизоре, Google календарь на экране, IP-камера RTSP на телевизор, VK видео на экране, потоки PRTV расписание, статистика показов рекламы.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-integrations/SKILL.md",
-      "digest": "sha256:7ddef844450cd986bb2fd2a0c7b01a756e9804f6b328af0f2f49a596eef4d0a3"
+      "digest": "sha256:0e16841633ce4a4c93cdda838205dee237e446b2569f081a81ca96b27bb3d715"
     },
     {
       "name": "prtv-editor-overview",
@@ -151,9 +165,9 @@
     {
       "name": "prtv-element-layout",
       "type": "skill-md",
-      "description": "Placing and controlling elements on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layers), keep aspect ratio, permanent elements on every slide, the right-click menu, entrance animations (57 presets), clickable links for touch kiosks, and layout rules for a TV screen (safe zone, type sizes by distance, contrast, 60/30/10 palette, motion). Use when moving, resizing, layering, animating or linking an element, or checking the composition of a menu board or promo slide in prtv.pro. Triggers (RU) расположить элемент, слои, анимация появления, кликабельный элемент, безопасная зона, вёрстка слайда PRTV.",
+      "description": "Placing and controlling elements on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layers), keep aspect ratio, permanent elements on every slide, the right-click menu, perspective (fitting an element into a slanted frame), entrance animations (57 presets), clickable links for touch kiosks, and layout rules for a TV screen (safe zone, type sizes by distance, contrast, 60/30/10 palette, motion). Use when moving, resizing, layering, animating or linking an element, or checking the composition of a menu board or promo slide in prtv.pro. Triggers (RU) расположить элемент, слои, анимация появления, кликабельный элемент, безопасная зона, вёрстка слайда PRTV.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-element-layout/SKILL.md",
-      "digest": "sha256:0704fdd9df93511f851ec7f9ad003fd05004e938cf9105710387855f51f89d03"
+      "digest": "sha256:5710f33f42df6d8b5e92d3c4f254c374d7f0f87f87270d37a672021d4a1ad4bd"
     },
     {
       "name": "prtv-text-element",
@@ -179,16 +193,23 @@
     {
       "name": "prtv-widgets",
       "type": "skill-md",
-      "description": "Widgets (informers) in the PRTV (prtv.pro) digital-signage editor — clock, weather, calendar, QR code, countdown, currency rates, promo card, maps, social feeds and RSS on a TV slide; native widget buttons vs the public builders on s.prtv.su embedded through an HTML block, URL rules (colours as %23, Cyrillic city names, encodeURIComponent), parameter naming, two-level transparency, sizing fluid widgets, offline and network risks on TVs, acceptance. Use before adding, restyling or debugging any widget on a menu board or info screen in prtv.pro; per-widget parameters are in prtv-widgets-catalog. Triggers (RU) информер, часы на экране, погода на ТВ, QR-код на слайде, таймер, курсы валют.",
+      "description": "Widgets (informers) in the PRTV (prtv.pro) digital-signage editor — clock, weather, calendar, QR code, countdown, currency rates, promo card, maps, social feeds, RSS and Google Sheets / Calendar (the PRTV RSS and PRTV Google widgets) on a TV slide; native widget buttons vs the public builders on s.prtv.su embedded through an HTML block, URL rules (colours as %23, Cyrillic city names, encodeURIComponent), parameter naming, two-level transparency, sizing fluid widgets, offline and network risks on TVs, acceptance. Use before adding, restyling or debugging any widget on a menu board or info screen in prtv.pro; per-widget parameters are in prtv-widgets-catalog. Triggers (RU) информер, часы на экране, погода на ТВ, QR-код на слайде, таймер, курсы валют.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-widgets/SKILL.md",
-      "digest": "sha256:ab79e19589d4616f44ba318ad06cfba7c0ec08ba483b055c22979958f2676ebb"
+      "digest": "sha256:a51f1e07701825a439aa048dd7e482c279e8fe2f484d42bbf262af9f098a1dc8"
     },
     {
       "name": "prtv-widgets-catalog",
       "type": "skill-md",
-      "description": "Parameter reference for the PRTV (prtv.pro / s.prtv.su) widget builders — for each widget its builder page, render file, views, proportion, exact parameter names, defaults, limitations and a ready iframe embed — clocks (21 types + 30 dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / business lunch / combo / closing discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, social feeds, RSS. Use with prtv-widgets when building or reading a specific widget URL for a TV screen or menu board. Triggers (RU) параметры информера, код часов, код погоды, QR Wi-Fi, счастливые часы, бизнес-ланч.",
+      "description": "Parameter reference for the PRTV (prtv.pro / s.prtv.su) widget builders — for each widget its builder page, render file, views, proportion, exact parameter names, defaults, limitations and a ready iframe embed — clocks (21 types + 30 dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / business lunch / combo / closing discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, social feeds, RSS, and the PRTV RSS and PRTV Google data widgets (Google Sheet, Calendar, News). Use with prtv-widgets when building or reading a specific widget URL for a TV screen or menu board. Triggers (RU) параметры информера, код часов, код погоды, QR Wi-Fi, счастливые часы, бизнес-ланч.",
       "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-widgets-catalog/SKILL.md",
-      "digest": "sha256:88c8d6c9290de29cceb9e58e2d83a5e0f14219c8fc30842f5b9f0c81486d06ac"
+      "digest": "sha256:ce49d9f2057aa68ad2b38cbee3eb926ec8bff55999e07b6f19228974e4d06b81"
+    },
+    {
+      "name": "prtv-design-mockups",
+      "type": "skill-md",
+      "description": "Design techniques with live widgets in the PRTV (prtv.pro) digital-signage editor — the editor's built-in perspective (right-click → «Включить режим работы с перспективой» → drag corners to the frame's corners) and ready mock-ups — news on a billboard against a city with date and source on panels under it, a screen in the client's interior with glass glare, a newspaper page built from several widgets, three screens on building facades with a single moving animation, a frosted card over a photo; general rules — background as an «Image» element on the bottom layer, widget without plate on a transparent background, one moving element per frame, captions readable on a TV. Use when you need a striking demo slide, a promo or a pitch showing a client their screen, a \"screen within a screen\", or a widget on a billboard, in a newspaper or over a photo. Triggers (RU) мокап экрана, информер на щите, экран в интерьере, перспектива в PRTV, газетная полоса, стекло поверх фото, дизайн-приёмы PRTV.",
+      "url": "https://prtvbiz-design.github.io/prtv-skills/prtv-design-mockups/SKILL.md",
+      "digest": "sha256:3e7e5a719aa6a8d9e9de9906fdab332f50c3840d9e13c9096f227760a1cdc77e"
     },
     {
       "name": "prtv-tv-player",
