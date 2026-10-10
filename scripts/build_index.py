@@ -21,10 +21,10 @@ ORDER = [
     "signage-screen-design", "signage-widgets", "signage-loop-video",
     "tv-signage-setup", "menu-board-by-venue", "hotel-digital-signage", "auto-service-signage",
     "beauty-salon-signage", "retail-store-signage", "clinic-signage",
-    "fitness-club-signage", "office-signage", "prtv-templates", "prtv-feed-widget", "prtv-integrations", "prtv-editor-overview", "prtv-agent-rules",
+    "fitness-club-signage", "office-signage", "prtv-templates", "prtv-informer-rss", "prtv-informer-google", "prtv-feed-widget", "prtv-integrations", "prtv-editor-overview", "prtv-agent-rules",
     "prtv-slide-settings", "prtv-element-layout", "prtv-text-element",
     "prtv-html-block-animation", "prtv-video", "prtv-widgets",
-    "prtv-widgets-catalog", "prtv-tv-player",
+    "prtv-widgets-catalog", "prtv-design-mockups", "prtv-tv-player",
 ]
 
 skills = []

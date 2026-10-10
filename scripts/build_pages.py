@@ -7,7 +7,7 @@ R = "https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main"
 G = "https://github.com/prtvbiz-design/prtv-skills/blob/main"
 GEN = ["digital-menu-board", "digital-signage-content", "signage-screen-design", "signage-widgets", "signage-loop-video", "tv-signage-setup"]
 IND = ["menu-board-by-venue", "hotel-digital-signage", "auto-service-signage", "beauty-salon-signage", "retail-store-signage", "clinic-signage", "fitness-club-signage", "office-signage"]
-PRTV = ["prtv-digital-signage", "prtv-templates", "prtv-feed-widget", "prtv-integrations", "prtv-editor-overview", "prtv-agent-rules", "prtv-slide-settings", "prtv-element-layout", "prtv-text-element", "prtv-html-block-animation", "prtv-video", "prtv-widgets", "prtv-widgets-catalog", "prtv-tv-player"]
+PRTV = ["prtv-digital-signage", "prtv-templates", "prtv-informer-rss", "prtv-informer-google", "prtv-feed-widget", "prtv-integrations", "prtv-editor-overview", "prtv-agent-rules", "prtv-slide-settings", "prtv-element-layout", "prtv-text-element", "prtv-html-block-animation", "prtv-video", "prtv-widgets", "prtv-widgets-catalog", "prtv-design-mockups", "prtv-tv-player"]
 ARTICLE = "https://s.prtv.su/otraslevye-resheniya/kak-sdelat-menyu-bord-dlya-kofejni-neyrosetyu"
 def d(n, f="SKILL.md"): return yaml.safe_load((root / n / f).read_text().split("---")[1])["description"]
 def short(s): return s.split(" Use ")[0].split(" Использовать")[0]
