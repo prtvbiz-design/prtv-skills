@@ -1,12 +1,12 @@
 ---
 name: prtv-element-layout
-description: Placing and controlling elements on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layers), keep aspect ratio, permanent elements on every slide, the right-click menu, entrance animations (57 presets), clickable links for touch kiosks, and layout rules for a TV screen (safe zone, type sizes by distance, contrast, 60/30/10 palette, motion). Use when moving, resizing, layering, animating or linking an element, or checking the composition of a menu board or promo slide in prtv.pro. Triggers (RU) расположить элемент, слои, анимация появления, кликабельный элемент, безопасная зона, вёрстка слайда PRTV.
+description: Placing and controlling elements on a slide in the PRTV (prtv.pro) digital-signage editor — position and size by dragging, rotation, depth (layers), keep aspect ratio, permanent elements on every slide, the right-click menu, perspective (fitting an element into a slanted frame), entrance animations (57 presets), clickable links for touch kiosks, and layout rules for a TV screen (safe zone, type sizes by distance, contrast, 60/30/10 palette, motion). Use when moving, resizing, layering, animating or linking an element, or checking the composition of a menu board or promo slide in prtv.pro. Triggers (RU) расположить элемент, слои, анимация появления, кликабельный элемент, безопасная зона, вёрстка слайда PRTV.
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.1"
-  date: "2026-09-26"
+  version: "1.2"
+  date: "2026-10-10"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
@@ -84,10 +84,21 @@ Seven items, identical for every element type. The editor's interface is in Russ
 | 3 | Настройки анимации элемента | Element animation settings | Opens the animation dialog (§5). |
 | 4 | Включить сбор статистики | Collect statistics | Toggle: per-element analytics. |
 | 5 | Сделать рекламным элементом | Mark as an advertising element | Often greyed out; the conditions under which it becomes available are not documented here. |
-| 6 | Включить режим работы с перспективой | Perspective mode | Toggle. |
+| 6 | Включить режим работы с перспективой | Perspective mode | Toggle: the element's corners can be dragged one by one — the element fits any quadrilateral (§4.1). |
 | 7 | Включить режим масштабирования | Scaling mode | Toggle. |
 
-Items 4–7 change modes whose visible effect was not examined for this skill; leave them off unless the task asks for them.
+Items 4, 5 and 7 change modes whose visible effect was not examined for this skill; leave them off unless the task asks for them.
+
+### 4.1. Perspective
+
+The built-in way to put an image or a widget into a slanted frame — a billboard, a screen on a wall, a facade in a background photo:
+
+1. Place the element roughly over the frame and size it to the frame; the element's proportion ≈ the frame seen head-on.
+2. Right-click the element → **«Включить режим работы с перспективой»** (enable perspective mode).
+3. Drag the element's corners one by one to the frame's corners; zoom the canvas in first.
+4. Check in the preview: corners match, text is readable. Perspective applies to all content, including a widget's iframe; check TV browsers separately.
+
+No CSS transforms in the HTML block's code are needed for this. Ready mock-ups (billboard, TV in an interior, screens on facades) — prtv-design-mockups.
 
 Right-click on an *empty* part of the canvas opens the slideshow defaults (styles of new slides and elements), not an element menu.
 
@@ -200,9 +211,9 @@ These come from real menu-board builds and from broadcast practice. They are wri
 - Do not run several animated elements at once.
 - Do not leave text, prices or logos closer than 96 / 60 px to the edges.
 - Do not promise in-slideshow navigation on a kiosk; link separate slideshows instead.
-- Do not leave the statistics / advertising / perspective / scaling toggles on by accident.
+- Do not leave the statistics / advertising / scaling toggles on by accident; use perspective only to fit an element into a frame.
 - Do not treat an edit made through the DOM as saved — reload and read back.
 
 ## Related
 
-prtv-editor-overview · prtv-slide-settings · prtv-text-element · prtv-html-block-animation · prtv-video · prtv-widgets · prtv-agent-rules
+prtv-editor-overview · prtv-slide-settings · prtv-text-element · prtv-html-block-animation · prtv-video · prtv-widgets · prtv-design-mockups · prtv-agent-rules
