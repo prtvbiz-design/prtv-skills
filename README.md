@@ -1,13 +1,13 @@
 # Digital signage & PRTV — Agent Skills
 
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-28-blue)](https://agentskills.io)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-31-blue)](https://agentskills.io)
 [![skills.sh](https://img.shields.io/badge/npx%20skills%20add-prtvbiz--design%2Fprtv--skills-black)](https://skills.sh/prtvbiz-design/prtv-skills)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Languages](https://img.shields.io/badge/lang-EN%20%7C%20RU-green)](#)
 
-Open skills that teach AI agents (Claude Code, Claude.ai, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and any tool that reads the Agent Skills format) how to make **digital signage** for small businesses: **menu boards for cafés and restaurants** (with ready layouts for coffee shops, burger bars, shawarma, pizzerias, sushi, beer bars, sports bars, canteens and bakeries), TV slideshows and promo loops, screen layout for Smart TVs, live widgets (clock, weather, QR, countdown), seamless loop video, putting it all on a real TV, and **industry playbooks** for hotels, car washes and filling stations, beauty salons, shops, clinics, fitness clubs, offices and residential buildings — plus a detailed set for the **PRTV** editor (https://prtv.pro): free templates as a first test, TV app and offline playback, menus straight from iiko / R_Keeper / Quick Resto.
+Open skills that teach AI agents (Claude Code, Claude.ai, Cursor, Codex, Gemini CLI, GitHub Copilot, Windsurf, OpenCode and any tool that reads the Agent Skills format) how to make **digital signage** for small businesses: **menu boards for cafés and restaurants** (with ready layouts for coffee shops, burger bars, shawarma, pizzerias, sushi, beer bars, sports bars, canteens and bakeries), TV slideshows and promo loops, screen layout for Smart TVs, live widgets (clock, weather, QR, countdown), seamless loop video, putting it all on a real TV, and **industry playbooks** for hotels, car washes and filling stations, beauty salons, shops, clinics, fitness clubs, offices and residential buildings — plus a detailed set for the **PRTV** editor (https://prtv.pro): free templates as a first test, TV app and offline playback, menus straight from iiko / R_Keeper / Quick Resto, live news from RSS and prices, promotions and events from Google Sheets and Google Calendar, mock-ups with the editor's built-in perspective.
 
-**По-русски.** Открытые скиллы для ИИ-агентов про цифровые вывески: **меню-борды для кофеен и ресторанов** (раскладки для кофейни, бургерной, шаурмичной, пиццерии, суши, пивного бара, спорт-бара, столовой, пекарни), слайд-шоу и промо-циклы для телевизоров, вёрстка под Smart TV, информеры (часы, погода, QR, таймер), бесшовные видеофоны, вывод на настоящий ТВ, **отраслевые сценарии** для отелей, автомоек и АЗС, салонов, магазинов, клиник, фитнеса, офисов и подъездов — и подробный набор про конструктор **PRTV** (prtv.pro): бесплатные шаблоны для первого теста, приложение для ТВ и офлайн, меню из iiko / R_Keeper / Quick Resto. Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Лицензия CC-BY-4.0.
+**По-русски.** Открытые скиллы для ИИ-агентов про цифровые вывески: **меню-борды для кофеен и ресторанов** (раскладки для кофейни, бургерной, шаурмичной, пиццерии, суши, пивного бара, спорт-бара, столовой, пекарни), слайд-шоу и промо-циклы для телевизоров, вёрстка под Smart TV, информеры (часы, погода, QR, таймер), бесшовные видеофоны, вывод на настоящий ТВ, **отраслевые сценарии** для отелей, автомоек и АЗС, салонов, магазинов, клиник, фитнеса, офисов и подъездов — и подробный набор про конструктор **PRTV** (prtv.pro): бесплатные шаблоны для первого теста, приложение для ТВ и офлайн, меню из iiko / R_Keeper / Quick Resto, живые новости из RSS, прайсы, акции и афиша из Google Таблиц и Календаря, мокапы со штатной перспективой. Каждый скилл — папка с `SKILL.md` (английский) и `SKILL.ru.md` (русский). Лицензия CC-BY-4.0.
 
 ## Install
 
@@ -49,6 +49,9 @@ npx skills add https://prtvbiz-design.github.io/prtv-skills            # via the
 - «Забери бесплатный шаблон кофейни в PRTV и поменяй цены.»
 - "Pull our iiko menu onto the TV over the counter."
 - «Слайд-шоу тормозит на Android TV и не стартует после отключения света.»
+- «Выведи на экран кофейни прайс из Google Таблицы и афишу из Google Календаря.»
+- "Put a news ticker with only our city's news at the bottom of the lobby screen."
+- «Покажи клиенту, как его новости будут выглядеть на рекламном щите.»
 
 ## The skills
 
@@ -84,17 +87,20 @@ Start with **prtv-digital-signage** (router), **prtv-templates** (fastest first 
 |---|---|
 | **[prtv-digital-signage](prtv-digital-signage/SKILL.md)** | Entry point: what PRTV is, when to use it, the end-to-end workflow and which skill to load at each step |
 | **[prtv-templates](prtv-templates/SKILL.md)** | Free system templates as a first test: preview by number, copy, rename, edit prices, fix expired countdowns, lighten for weak TVs; template numbers by industry |
+| **[prtv-informer-rss](prtv-informer-rss/SKILL.md)** | «PRTV RSS» widget: up to 5 feeds with alternation, word filters, carousel, free layout, feed, grid, ticker; recipes — sports from 5 feeds, city-only news, bottom ticker |
+| **[prtv-informer-google](prtv-informer-google/SKILL.md)** | «PRTV Google» widget: Google Sheet price lists, tiles and announcements with show dates, Google Calendar schedules, Google News; recipes — coffee-shop prices, promotions with photos, week events |
 | **[prtv-feed-widget](prtv-feed-widget/SKILL.md)** | «Лента» widget: Google Sheets, RSS, VK, Google News, Wikipedia, iCal, production calendar, CB rates → price lists, schedules, feeds on screen |
 | **[prtv-integrations](prtv-integrations/SKILL.md)** | iiko, R_Keeper, Quick Resto menus; Excel, Google Calendar, social feeds, VK Video, IP cameras (RTSP), voting, streams, statistics, licences |
 | **[prtv-editor-overview](prtv-editor-overview/SKILL.md)** | Slideshow → slide → element, the 1920×1080 space, URLs, panels, DOM conventions, fonts, uploads, licences, watermark |
 | **[prtv-agent-rules](prtv-agent-rules/SKILL.md)** | Discipline for an AI browser agent: DOM over screenshots, computed coordinates, verification by reload, JS-tool traps |
 | **[prtv-slide-settings](prtv-slide-settings/SKILL.md)** | Slide strip, duration, 15 transitions, progress bar, backgrounds, defaults, templates |
-| **[prtv-element-layout](prtv-element-layout/SKILL.md)** | Position, depth, right-click menu, 57 entrance presets, kiosk links, TV layout rules |
+| **[prtv-element-layout](prtv-element-layout/SKILL.md)** | Position, depth, right-click menu, perspective, 57 entrance presets, kiosk links, TV layout rules |
 | **[prtv-text-element](prtv-text-element/SKILL.md)** | Native text via TinyMCE: what persists, menu-row traps, bulk edits |
 | **[prtv-html-block-animation](prtv-html-block-animation/SKILL.md)** | HTML block, CSS keyframes, SVG filters, SMIL without JavaScript; recipes |
 | **[prtv-video](prtv-video/SKILL.md)** | Video element, background video, embeds, sound on TVs, seamless loops |
 | **[prtv-widgets](prtv-widgets/SKILL.md)** | Widgets (informers): URL rules, transparency, sizing, network risks, acceptance |
-| **[prtv-widgets-catalog](prtv-widgets-catalog/SKILL.md)** | Per-widget parameters and ready embeds for ~30 widget builders on s.prtv.su |
+| **[prtv-widgets-catalog](prtv-widgets-catalog/SKILL.md)** | Per-widget parameters and ready embeds for ~30 widget builders on s.prtv.su, plus PRTV RSS and PRTV Google |
+| **[prtv-design-mockups](prtv-design-mockups/SKILL.md)** | Mock-ups with live widgets: built-in perspective, billboard, screen in an interior with glare, newspaper page, screens on facades, frosted card over a photo |
 | **[prtv-tv-player](prtv-tv-player/SKILL.md)** | PRTV on a TV: app and APK, browsers per brand, autostart, HDMI-CEC sleep, cache and USB offline, burn-in prevention, speeding up weak TVs |
 
 ## About PRTV
@@ -111,6 +117,7 @@ Discovery index (Agent Skills Discovery RFC v0.2.0): https://prtvbiz-design.gith
 
 ## Links
 
+- Version 1.4 (2026-10-10): new prtv-informer-rss, prtv-informer-google, prtv-design-mockups; updated prtv-feed-widget, prtv-widgets, prtv-widgets-catalog, prtv-element-layout, prtv-integrations, prtv-digital-signage.
 - Site of the set: https://prtvbiz-design.github.io/prtv-skills/
 - Editor: https://prtv.pro · Widgets: https://s.prtv.su/informery · Articles and cases: https://s.prtv.su
 - Raw files: `https://raw.githubusercontent.com/prtvbiz-design/prtv-skills/main/<skill>/SKILL.md`
