@@ -1,12 +1,12 @@
 ---
 name: prtv-widgets
-description: Widgets (informers) in the PRTV (prtv.pro) digital-signage editor — clock, weather, calendar, QR code, countdown, currency rates, promo card, maps, social feeds and RSS on a TV slide; native widget buttons vs the public builders on s.prtv.su embedded through an HTML block, URL rules (colours as %23, Cyrillic city names, encodeURIComponent), parameter naming, two-level transparency, sizing fluid widgets, offline and network risks on TVs, acceptance. Use before adding, restyling or debugging any widget on a menu board or info screen in prtv.pro; per-widget parameters are in prtv-widgets-catalog. Triggers (RU) информер, часы на экране, погода на ТВ, QR-код на слайде, таймер, курсы валют.
+description: Widgets (informers) in the PRTV (prtv.pro) digital-signage editor — clock, weather, calendar, QR code, countdown, currency rates, promo card, maps, social feeds, RSS and Google Sheets / Calendar (the PRTV RSS and PRTV Google widgets) on a TV slide; native widget buttons vs the public builders on s.prtv.su embedded through an HTML block, URL rules (colours as %23, Cyrillic city names, encodeURIComponent), parameter naming, two-level transparency, sizing fluid widgets, offline and network risks on TVs, acceptance. Use before adding, restyling or debugging any widget on a menu board or info screen in prtv.pro; per-widget parameters are in prtv-widgets-catalog. Triggers (RU) информер, часы на экране, погода на ТВ, QR-код на слайде, таймер, курсы валют.
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.1"
-  date: "2026-09-26"
+  version: "1.2"
+  date: "2026-10-10"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
@@ -19,7 +19,7 @@ A widget (PRTV calls them **informers**) is live content on a slide: a clock, we
 
 **A. Native widget buttons** in the left panel (section «Информеры»: Clock, Weather, Air quality, Currency rates, Transport timetable, Traffic, Restaurant menu; section «Социальные сети»: VKontakte, Odnoklassniki, Telegram, RSS). One click adds an element with a settings form in the element panel. The Restaurant-menu element needs a POS system connected in account settings (`https://prtv.pro/settings`); the VK element needs the VK service connected there too.
 
-**B. The public builders on s.prtv.su.** The catalogue is `https://s.prtv.su/informery` (30 builders, three pages), each builder at `https://s.prtv.su/informery/<name>` — for example `/chasy` (clocks), `/openweather` (weather), `/qr-infomer`, `/countdown`, `/kalendar`, `/google-kalendar`. A builder produces an `<iframe>` code. Paste it into an **HTML block** on the slide. This path gives the full range of views and parameters and is the one this skill set documents.
+**B. The public builders on s.prtv.su.** The catalogue is `https://s.prtv.su/informery` (30 builders, three pages), each builder at `https://s.prtv.su/informery/<name>` — for example `/chasy` (clocks), `/openweather` (weather), `/qr-infomer`, `/countdown`, `/kalendar`, `/google-kalendar`. A builder produces an `<iframe>` code. The data-widget builders live outside the catalogue: **PRTV RSS** — `https://s.prtv.su/wp-content/plugins/prtv-informer-feed/index_in.php` (prtv-informer-rss), **PRTV Google** (Sheet, Calendar, News) — `https://s.prtv.su/wp-content/plugins/prtv-informer-google/index_in.php` (prtv-informer-google), and «Лента» (prtv-feed-widget). Paste it into an **HTML block** on the slide. This path gives the full range of views and parameters and is the one this skill set documents.
 
 A widget already on a slide does **not** reopen its builder: double-click on a clock or weather element opens the general element panel. To change how a widget looks, generate a new code in the builder and replace the HTML of the block.
 
@@ -93,7 +93,7 @@ Some views change layout below a certain width (media queries) — the catalogue
 
 No widget survives the TV going offline; live ones (weather, rates, calendars, maps, feeds) need the network at every show. Beyond that:
 
-- **Self-contained on s.prtv.su:** clocks, dials, plain calendar, QR, countdown, promo card, moon, work-day, holidays, currency rates (CB RF / NB RK), precious metals. They need only s.prtv.su.
+- **Self-contained on s.prtv.su:** clocks, dials, plain calendar, QR, countdown, promo card, moon, work-day, holidays, currency rates (CB RF / NB RK), precious metals. They need only s.prtv.su. PRTV RSS and PRTV Google belong here too: feeds, sheets, calendars and pictures are fetched by the s.prtv.su server, fonts are served from there, and if a source is down the screen keeps the previous data.
 - **Depend on third-party services from the TV:** Google calendar (Google API + CDN), maps and air quality (tile servers, map APIs, aqicn), stocks (CDN scripts), NB RB rates (fetched from nbrb.by by the TV), Yandex timetable (rasp.yandex.ru — may reject data-centre or bot-like clients), social feeds and RSS (source sites and CDNs). If any of these is blocked on the venue's network, the widget is empty with no message. Prefer self-contained widgets for unattended screens; test the others on site.
 - **Mixed content:** some map tiles and channel logos are served over `http://`; an `https://` player may block them (map without the weather layer, logos missing). Check on the TV.
 - **Emoji:** moon phases and the "fun" work-day phrases use emoji; a TV without an emoji font shows squares.
@@ -107,7 +107,9 @@ No widget survives the TV going offline; live ones (weather, rates, calendars, m
 | Day-part trigger | Calendar / Google calendar — as show logic, not as the visual focus of a till board |
 | Context relevance ("hot today — take a cold drink") | Weather |
 | Weekly freshness without rebuilding | Daily items (moon, holidays, work-day), Google calendar events |
-| Social proof, live news | Social feeds, RSS, Yandex reviews widget |
+| Social proof, live news | Social feeds, PRTV RSS, Yandex reviews widget |
+| Prices, promotions, stop list without editing slides | PRTV Google — Google Sheet |
+| Events listing, class timetable | PRTV Google — Google Calendar |
 | Guest interaction | QR (menu, Wi-Fi, tips, reviews), poll with QR |
 | Foyer, waiting room | TV programme, timetable, currency rates |
 
@@ -129,4 +131,4 @@ Labels near a widget (a caption under a countdown, a heading above the weather) 
 
 ## Related
 
-prtv-widgets-catalog · prtv-editor-overview · prtv-html-block-animation · prtv-element-layout · prtv-slide-settings · prtv-agent-rules
+prtv-widgets-catalog · prtv-informer-rss · prtv-informer-google · prtv-design-mockups · prtv-editor-overview · prtv-html-block-animation · prtv-element-layout · prtv-slide-settings · prtv-agent-rules
