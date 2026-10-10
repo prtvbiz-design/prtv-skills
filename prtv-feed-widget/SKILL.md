@@ -5,10 +5,10 @@ license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.0"
-  date: "2026-09-27"
+  version: "1.1"
+  date: "2026-10-10"
   language: en
-  related: signage-widgets, prtv-widgets, prtv-digital-signage
+  related: prtv-informer-rss, prtv-informer-google, signage-widgets, prtv-widgets, prtv-digital-signage
 ---
 
 # PRTV «Лента» (Feed) widget
@@ -16,6 +16,16 @@ metadata:
 The main weakness of most signage slideshows is hard-coded content: prices, schedules and promo dates typed into slides go stale, and every change means opening the editor. «Лента» moves that content into a source the business already maintains — usually a Google Sheet edited from a phone — and renders it on the slide. The slide design stays; the data updates itself.
 
 Builder (v1.0, Russian UI): https://s.prtv.su/wp-content/plugins/prtv-informer-rss/index_in.php — the address may move to the public widget catalogue https://s.prtv.su/informery. The builder produces an `<iframe>` (100%×100%) that goes into an **HTML block** on the slide; size and position are set on the slide (see prtv-widgets for the general rules).
+
+## New widgets: PRTV RSS and PRTV Google
+
+Since October 2026 the main sources of «Лента» have been split into two separate widgets with their own builders — prefer them for new screens:
+
+- **«PRTV RSS»** — site news from RSS/Atom: up to 5 feeds with alternation, word filter, carousel, free layout, scrolling feed, grid, ticker. Skill **prtv-informer-rss**.
+- **«PRTV Google»** — Google Sheet (price list, tiles, table as is, announcements), Google Calendar (schedule, today and tomorrow, next event) and Google News. Skill **prtv-informer-google**.
+- Mock-ups with these widgets (billboard, screen in an interior, newspaper, perspective) — **prtv-design-mockups**.
+
+«Лента» keeps working at its current address; its links with RSS sources also open in the PRTV RSS builder. Central Bank rates, VK, Wikipedia and the production calendar remain in «Лента» only for now.
 
 ## 1. Sources
 
