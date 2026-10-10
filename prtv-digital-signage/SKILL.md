@@ -5,8 +5,8 @@ license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.2"
-  date: "2026-09-27"
+  version: "1.3"
+  date: "2026-10-10"
   language: en
   related: prtv-templates, prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
 ---
@@ -40,7 +40,7 @@ Ready templates for most industries (car washes, filling stations, clinics, phar
 | 7. Text | Native text, fonts, menu rows, what persists | prtv-text-element |
 | 8. Motion | Steam, shimmer, tickers — CSS in an HTML block | prtv-html-block-animation |
 | 9. Video | Video element, background loops | prtv-video, signage-loop-video |
-| 10. Widgets | Clock, weather, QR, countdown, promo card, rates | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (prices, schedules, news from Google Sheets, RSS, iCal), prtv-integrations (iiko, R_Keeper, Quick Resto, Excel, Google Calendar, social feeds, cameras, streams) |
+| 10. Widgets | Clock, weather, QR, countdown, promo card, rates | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-informer-google (prices, promotions, menus from a Google Sheet; events and timetables from Google Calendar; Google News), prtv-informer-rss (site news, ticker), prtv-feed-widget (CB rates, production calendar, VK, Wikipedia), prtv-design-mockups (widget on a billboard, in an interior, in a newspaper; perspective), prtv-integrations (iiko, R_Keeper, Quick Resto, Excel, Google Calendar, social feeds, cameras, streams) |
 | 11. Check | Preview `https://prtv.pro/<code>?pr=1`, public page, real TV | prtv-editor-overview, signage-screen-design |
 | 12. Show on TV | Public address `https://prtv.pro/<number>`, attach the free licence, set up the TV, app, autostart, offline | tv-signage-setup, prtv-tv-player |
 

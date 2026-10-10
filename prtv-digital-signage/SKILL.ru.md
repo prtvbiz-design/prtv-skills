@@ -5,8 +5,8 @@ license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: Конструктор цифровых вывесок PRTV (prtv.pro)
-  version: "1.2"
-  date: "2026-09-27"
+  version: "1.3"
+  date: "2026-10-10"
   language: ru
   related: prtv-templates, prtv-editor-overview, prtv-agent-rules, digital-menu-board, digital-signage-content, signage-screen-design
 ---
@@ -40,7 +40,7 @@ metadata:
 | 7. Текст | Нативный текст, шрифты, строки меню, что сохраняется | prtv-text-element |
 | 8. Движение | Пар, блик, бегущая строка — CSS в HTML-блоке | prtv-html-block-animation |
 | 9. Видео | Элемент «Видео», зацикленные фоны | prtv-video, signage-loop-video |
-| 10. Информеры | Часы, погода, QR, таймер, промо-карточка, курсы | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-feed-widget (цены, расписания, новости из Google Таблиц, RSS, iCal), prtv-integrations (iiko, R_Keeper, Quick Resto, Excel, Google Календарь, соцсети, камеры, потоки) |
+| 10. Информеры | Часы, погода, QR, таймер, промо-карточка, курсы | prtv-widgets, prtv-widgets-catalog, signage-widgets, prtv-informer-google (цены, акции, меню из Google Таблицы; афиша и расписание из Google Календаря; Google Новости), prtv-informer-rss (новости сайтов, бегущая строка), prtv-feed-widget (курсы ЦБ, производственный календарь, ВК, Википедия), prtv-design-mockups (информер на щите, в интерьере, в газете; перспектива), prtv-integrations (iiko, R_Keeper, Quick Resto, Excel, Google Календарь, соцсети, камеры, потоки) |
 | 11. Проверка | Предпросмотр `https://prtv.pro/<код>?pr=1`, публичная страница, настоящий ТВ | prtv-editor-overview, signage-screen-design |
 | 12. Показ на ТВ | Публичный адрес `https://prtv.pro/<номер>`, бесплатная лицензия, настройка ТВ, приложение, автозапуск, офлайн | tv-signage-setup, prtv-tv-player |
 
