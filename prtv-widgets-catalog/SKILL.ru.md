@@ -1,12 +1,12 @@
 ---
 name: prtv-widgets-catalog
-description: Справочник параметров конструкторов информеров PRTV (prtv.pro / s.prtv.su) — для каждого виджета страница конструктора, файл, виды, пропорция, точные имена параметров, значения по умолчанию, ограничения и готовый код iframe — часы (21 тип + 30 циферблатов), погода (7 видов), таймер, QR (меню / Wi-Fi / текст), календарь, Google Календарь, курсы валют и драгметаллов, акции, промо-карточка (счастливые часы / бизнес-ланч / комбо / скидка до закрытия), луна, праздники, отсчёт рабочего дня, карты погоды и качества воздуха, телепрограмма, радио, расписание, опрос, облачная фотолента, виджеты Яндекса, соцсети, RSS. Использовать вместе с prtv-widgets, когда собирается или читается адрес конкретного виджета для экрана или меню-борда. Triggers (EN) widget parameters, clock embed, weather embed, Wi-Fi QR, happy hours, business lunch.
+description: Справочник параметров конструкторов информеров PRTV (prtv.pro / s.prtv.su) — для каждого виджета страница конструктора, файл, виды, пропорция, точные имена параметров, значения по умолчанию, ограничения и готовый код iframe — часы (21 тип + 30 циферблатов), погода (7 видов), таймер, QR (меню / Wi-Fi / текст), календарь, Google Календарь, курсы валют и драгметаллов, акции, промо-карточка (счастливые часы / бизнес-ланч / комбо / скидка до закрытия), луна, праздники, отсчёт рабочего дня, карты погоды и качества воздуха, телепрограмма, радио, расписание, опрос, облачная фотолента, виджеты Яндекса, соцсети, RSS, информеры данных PRTV RSS и PRTV Google (Google Таблица, Календарь, Новости). Использовать вместе с prtv-widgets, когда собирается или читается адрес конкретного виджета для экрана или меню-борда. Triggers (EN) widget parameters, clock embed, weather embed, Wi-Fi QR, happy hours, business lunch.
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: Конструктор цифровых вывесок PRTV (prtv.pro)
-  version: "1.1"
-  date: "2026-09-26"
+  version: "1.2"
+  date: "2026-10-10"
   language: ru
   scope: интерфейс редактора + чтение состояния страницы из DOM; без вызовов внутреннего API
 ---
@@ -195,6 +195,19 @@ metadata:
 
 Работают только публичные источники. Картинки и аватары грузятся с сайтов-источников — заблокирован источник, пуста лента. Иконки Facebook, Instagram и Twitter/X в панели есть, рабочие элементы не подтверждены; не обещать.
 
+## 14. Информеры данных: PRTV RSS и PRTV Google
+
+Два информера с собственными конструкторами вне каталога `/informery`. Код — тот же `<iframe>` 100%×100% в HTML-блок; ссылку удобнее собирать в конструкторе, а не руками. Полные инструкции и рецепты — в отдельных скиллах.
+
+| Информер | Конструктор | Файл показа | Режимы (`type`) | Скилл |
+|---|---|---|---|---|
+| PRTV RSS | `https://s.prtv.su/wp-content/plugins/prtv-informer-feed/index_in.php` | `rss_in.php` | `carousel`, `free`, `list`, `grid`, `ticker` | prtv-informer-rss |
+| PRTV Google | `https://s.prtv.su/wp-content/plugins/prtv-informer-google/index_in.php` | `google_in.php` | таблица (`src=sheet`): `price`, `table`, `carousel`, `list`, `grid`, `ticker`; календарь (`src=cal`): `schedule`, `twodays`, `carousel`, `ticker`; новости (`src=news`): `carousel`, `list`, `grid`, `ticker` | prtv-informer-google |
+
+Основные параметры. PRTV RSS: `u` — до 5 адресов через `|`, подпись после `~`; `mix` (`alt` — чередовать, `date` — по дате); `n`, `max_age`, `inc`, `exc`, `only_img`. PRTV Google: `sheet` + `gid`, `map` (`поле:буква`), `cur`; `cal` (до 3 через `|`), `tz`, `range` (`today`, `tomorrow`, `week`, `month`, `n`); `q` (до 3 запросов), `hl`, `gl`, `when`. Общие у обоих: `theme` (`card`, `minimal`, `dark`), `transpar`, `fon_table`, `font_text`, `font_accent` (цвета `%23RRGGBB`), `font_family` (Inter, Roboto, Montserrat, PT Sans, Open Sans, Oswald, Arial), `font_size` 24–96 для 1920×1080, `radius`, `padding`, `duration`, `refresh`. Неверное значение молча заменяется умолчанием.
+
+Оба самодостаточны: источники и картинки читает сервер s.prtv.su, до первой загрузки блок прозрачный, при сбое держатся прошлые данные.
+
 ## Связанные скиллы
 
-prtv-widgets · prtv-html-block-animation · prtv-editor-overview · prtv-element-layout · prtv-agent-rules
+prtv-widgets · prtv-informer-rss · prtv-informer-google · prtv-html-block-animation · prtv-editor-overview · prtv-element-layout · prtv-agent-rules

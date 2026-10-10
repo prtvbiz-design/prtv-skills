@@ -1,12 +1,12 @@
 ---
 name: prtv-widgets-catalog
-description: Parameter reference for the PRTV (prtv.pro / s.prtv.su) widget builders — for each widget its builder page, render file, views, proportion, exact parameter names, defaults, limitations and a ready iframe embed — clocks (21 types + 30 dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / business lunch / combo / closing discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, social feeds, RSS. Use with prtv-widgets when building or reading a specific widget URL for a TV screen or menu board. Triggers (RU) параметры информера, код часов, код погоды, QR Wi-Fi, счастливые часы, бизнес-ланч.
+description: Parameter reference for the PRTV (prtv.pro / s.prtv.su) widget builders — for each widget its builder page, render file, views, proportion, exact parameter names, defaults, limitations and a ready iframe embed — clocks (21 types + 30 dials), weather (7 views), countdown, QR (menu / Wi-Fi / text), calendar, Google calendar, currency and precious-metal rates, stocks, promo card (happy hours / business lunch / combo / closing discount), moon, holidays, work-day countdown, weather and air-quality maps, TV programme, radio, timetable, poll, cloud photo feed, Yandex widgets, social feeds, RSS, and the PRTV RSS and PRTV Google data widgets (Google Sheet, Calendar, News). Use with prtv-widgets when building or reading a specific widget URL for a TV screen or menu board. Triggers (RU) параметры информера, код часов, код погоды, QR Wi-Fi, счастливые часы, бизнес-ланч.
 license: CC-BY-4.0
 metadata:
   author: PRTV (prtv.pro)
   product: PRTV (prtv.pro) digital signage editor
-  version: "1.1"
-  date: "2026-09-26"
+  version: "1.2"
+  date: "2026-10-10"
   language: en
   scope: editor UI + reading page state from DOM; no private API calls
 ---
@@ -195,6 +195,19 @@ Left panel → «Социальные сети». These are native elements, not
 
 Only public sources work. Images and avatars load from the source sites — blocked source = empty feed. Icons for Facebook, Instagram and Twitter/X exist in the panel but working elements were not confirmed; do not promise them.
 
+## 14. Data widgets: PRTV RSS and PRTV Google
+
+Two widgets with their own builders outside the `/informery` catalogue. The code is the same `<iframe>` 100%×100% for an HTML block; build the link in the builder rather than by hand. Full instructions and recipes are in separate skills.
+
+| Widget | Builder | Render file | Modes (`type`) | Skill |
+|---|---|---|---|---|
+| PRTV RSS | `https://s.prtv.su/wp-content/plugins/prtv-informer-feed/index_in.php` | `rss_in.php` | `carousel`, `free`, `list`, `grid`, `ticker` | prtv-informer-rss |
+| PRTV Google | `https://s.prtv.su/wp-content/plugins/prtv-informer-google/index_in.php` | `google_in.php` | sheet (`src=sheet`): `price`, `table`, `carousel`, `list`, `grid`, `ticker`; calendar (`src=cal`): `schedule`, `twodays`, `carousel`, `ticker`; news (`src=news`): `carousel`, `list`, `grid`, `ticker` | prtv-informer-google |
+
+Main parameters. PRTV RSS: `u` — up to 5 addresses separated by `|`, caption after `~`; `mix` (`alt` = alternate, `date` = by date); `n`, `max_age`, `inc`, `exc`, `only_img`. PRTV Google: `sheet` + `gid`, `map` (`field:letter`), `cur`; `cal` (up to 3 separated by `|`), `tz`, `range` (`today`, `tomorrow`, `week`, `month`, `n`); `q` (up to 3 queries), `hl`, `gl`, `when`. Common to both: `theme` (`card`, `minimal`, `dark`), `transpar`, `fon_table`, `font_text`, `font_accent` (colours as `%23RRGGBB`), `font_family` (Inter, Roboto, Montserrat, PT Sans, Open Sans, Oswald, Arial), `font_size` 24–96 for 1920×1080, `radius`, `padding`, `duration`, `refresh`. An invalid value is silently replaced by the default.
+
+Both are self-contained: sources and pictures are fetched by the s.prtv.su server, the block is transparent until the first load, and on failure the previous data stays.
+
 ## Related
 
-prtv-widgets · prtv-html-block-animation · prtv-editor-overview · prtv-element-layout · prtv-agent-rules
+prtv-widgets · prtv-informer-rss · prtv-informer-google · prtv-html-block-animation · prtv-editor-overview · prtv-element-layout · prtv-agent-rules
